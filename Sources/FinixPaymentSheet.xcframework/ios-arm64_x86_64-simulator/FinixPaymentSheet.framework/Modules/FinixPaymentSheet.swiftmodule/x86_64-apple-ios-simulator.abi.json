@@ -17233,172 +17233,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -17672,6 +17506,172 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -19224,7 +19224,7 @@
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/FinixAPIEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 296,
+      "offset": 323,
       "length": 1,
       "value": "2"
     },
@@ -20587,6 +20587,62 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 919,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 957,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 992,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3363,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3401,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3436,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6814,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6904,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/Validation\/RegionField.swift",
       "kind": "Dictionary",
       "offset": 239,
@@ -20825,63 +20881,7 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 919,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 957,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 992,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3363,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3401,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3436,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6814,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6904,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Library\/Developer\/Xcode\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FinixPaymentSheet\/IntermediateBuildFilesPath\/FinixPaymentSheet.build\/Release-iphoneos\/FinixPaymentSheet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/israrul.haque\/Library\/Developer\/Xcode\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FinixPaymentSheet\/IntermediateBuildFilesPath\/FinixPaymentSheet.build\/Release-iphonesimulator\/FinixPaymentSheet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 723,
       "length": 7,

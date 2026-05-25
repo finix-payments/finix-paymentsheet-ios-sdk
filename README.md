@@ -1,42 +1,40 @@
-# generic-template-repository
+# FinixPaymentSheet iOS SDK
 
-Template repository that has some basic github actions for checking commits and an example release/build task. 
+Binary distribution of the FinixPaymentSheet iOS SDK via Swift Package Manager.
 
-# Create a DevOps ticket
+## Installation
 
-- Create a DevOps ticket to request the new repo with an explaination of what it will be used for.
-- Ping @chrisfinix  to approve the new repo.
+### Swift Package Manager
 
-# Setup your repo. 
-Before getting started update your repository settings and protect your main branch.
+Add the following to your `Package.swift`:
 
-## Update Features Settings
+```swift
+dependencies: [
+    .package(url: "https://github.com/finix-payments/finix-paymentsheet-ios-sdk.git", from: "1.0.9")
+]
+```
 
-- Disable Wikis
-- Disable Issues
-- Disable Projects
+Or in Xcode:
+1. File → Add Package Dependencies
+2. Enter: `https://github.com/finix-payments/finix-paymentsheet-ios-sdk`
+3. Select version `1.0.9` or later
 
-## Update Pull Requests Settings
+## Requirements
 
-Majority of team's gitflows is to only allow rebase merging.
+- iOS 15.0+
+- Xcode 14.0+
+- Swift 5.9+
 
-- Disable "Allow merge commits"
-- Disable "Allow squash merging"
-- Enable "Automatically delete head branches"
+## Source Code
 
-## Create a branch protection rule for main
+This repository contains only the pre-built binary XCFramework. For source code, see:
+- [PaymentSheet Source Repository](https://github.com/finix-payments/PaymentSheet) (Private)
 
-- Under Code and Automation -> Branches
-- Select "Add classic branch protection rule"
-- Branch name "main"
-- Enable Require a pull request before merging
-- Enable Require approvals
-- Enable Require status checks to pass before merging
-- Search for "pr-commits" in the status check search bar and select "pr-commits / Validate PR Commit Messages"
-- Enable Do not allow bypassing the above settings
+## Support
 
-## Code best practices
-- If you're going to use jooq, make sure you add a [commit](https://github.com/finix-payments/processing/pull/8987/commits/f98a479b4e03329c79a89679540e452f35292ca7) similar to this to block the use the .asterisk() method. 
+- Email: developers@finixpayments.com
+- Documentation: https://www.finix.com/docs/guides/payments/
 
-## Cleanup this readme
-Test that everything is working by creating a pull request to delete the setup steps from this readme and verify checks are running, and all the settings are correct. 
+## License
+
+Apache License 2.0
