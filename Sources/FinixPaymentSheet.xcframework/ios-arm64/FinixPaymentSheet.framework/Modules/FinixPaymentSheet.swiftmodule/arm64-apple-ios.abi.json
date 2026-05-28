@@ -1468,7 +1468,10 @@
         "name": "FinixCardScanSDK",
         "printedName": "FinixCardScanSDK",
         "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -18985,42 +18988,42 @@
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7243,
+      "offset": 6970,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7248,
+      "offset": 6975,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7297,
+      "offset": 7024,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7302,
+      "offset": 7029,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7354,
+      "offset": 7081,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7359,
+      "offset": 7086,
       "length": 1,
       "value": "2"
     },
