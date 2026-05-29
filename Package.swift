@@ -7,13 +7,29 @@ let package = Package(
     products: [
         .library(
             name: "FinixPaymentSheet",
-            targets: ["FinixPaymentSheet"]
+            targets: ["FinixPaymentSheetWrapper"]
         ),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/Datadog/dd-sdk-ios.git", exact: "3.6.1"),
     ],
     targets: [
         .binaryTarget(
-            name: "FinixPaymentSheet",
+            name: "FinixPaymentSheetBinary",
             path: "Sources/FinixPaymentSheet.xcframework"
+        ),
+        .target(
+            name: "FinixPaymentSheetWrapper",
+            dependencies: [
+                "FinixPaymentSheetBinary",
+                .product(name: "DatadogCore", package: "dd-sdk-ios"),
+                .product(name: "DatadogLogs", package: "dd-sdk-ios"),
+                .product(name: "DatadogCrashReporting", package: "dd-sdk-ios"),
+            ],
+            path: "Sources/Wrapper",
+            swiftSettings: [
+                .define("SPM_BUILD")
+            ]
         ),
     ]
 )
