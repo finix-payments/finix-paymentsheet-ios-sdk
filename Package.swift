@@ -7,25 +7,24 @@ let package = Package(
     products: [
         .library(
             name: "FinixPaymentSheet",
-            targets: ["FinixPaymentSheet", "FinixPaymentSheetDependencies"]
+            targets: ["FinixPaymentSheetWrapper"]
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Datadog/dd-sdk-ios.git", exact: "3.6.1"),
+        .package(url: "https://github.com/finix-payments/finix-cardscanner-ios-sdk.git", branch: "main"),
     ],
     targets: [
         .binaryTarget(
-            name: "FinixPaymentSheet",
+            name: "FinixPaymentSheetBinary",
             path: "Sources/FinixPaymentSheet.xcframework"
         ),
         .target(
-            name: "FinixPaymentSheetDependencies",
+            name: "FinixPaymentSheetWrapper",
             dependencies: [
-                .product(name: "DatadogCore", package: "dd-sdk-ios"),
-                .product(name: "DatadogLogs", package: "dd-sdk-ios"),
-                .product(name: "DatadogCrashReporting", package: "dd-sdk-ios"),
+                "FinixPaymentSheetBinary",
+                .product(name: "FinixCardScanSDK", package: "finix-cardscanner-ios-sdk"),
             ],
-            path: "Sources/Dependencies"
+            path: "Sources/Wrapper"
         ),
     ]
 )

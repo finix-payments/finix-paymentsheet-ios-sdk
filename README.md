@@ -25,6 +25,13 @@ Or in Xcode:
 - Xcode 14.0+
 - Swift 5.9+
 
+## Dependencies
+
+This SDK automatically includes:
+- **FinixCardScanSDK** - Card scanning functionality (automatically fetched via SPM)
+
+No additional configuration needed - all dependencies are handled automatically.
+
 ## Source Code
 
 This repository contains only the pre-built binary XCFramework. For source code, see:
