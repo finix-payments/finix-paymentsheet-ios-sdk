@@ -1551,8 +1551,7 @@
         "declKind": "Import",
         "moduleName": "FinixPaymentSheet",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -18925,105 +18924,105 @@
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 582,
+      "offset": 628,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 587,
+      "offset": 633,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 632,
+      "offset": 678,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 637,
+      "offset": 683,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 682,
+      "offset": 728,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 687,
-      "length": 1,
-      "value": "2"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 733,
       "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 779,
+      "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 738,
+      "offset": 784,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1009,
+      "offset": 1101,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 6970,
+      "offset": 7756,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 6975,
+      "offset": 7761,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7024,
+      "offset": 7810,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7029,
+      "offset": 7815,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7081,
+      "offset": 7867,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/israrul.haque\/Development\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7086,
+      "offset": 7872,
       "length": 1,
       "value": "2"
     },
