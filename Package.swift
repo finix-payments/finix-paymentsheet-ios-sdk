@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "FinixPaymentSheet",
-            targets: ["FinixPaymentSheetWrapper"]
+            targets: ["FinixPaymentSheet", "FinixPaymentSheetDependencies"]
         ),
     ],
     dependencies: [
@@ -15,21 +15,17 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "FinixPaymentSheetBinary",
+            name: "FinixPaymentSheet",
             path: "Sources/FinixPaymentSheet.xcframework"
         ),
         .target(
-            name: "FinixPaymentSheetWrapper",
+            name: "FinixPaymentSheetDependencies",
             dependencies: [
-                "FinixPaymentSheetBinary",
                 .product(name: "DatadogCore", package: "dd-sdk-ios"),
                 .product(name: "DatadogLogs", package: "dd-sdk-ios"),
                 .product(name: "DatadogCrashReporting", package: "dd-sdk-ios"),
             ],
-            path: "Sources/Wrapper",
-            swiftSettings: [
-                .define("SPM_BUILD")
-            ]
+            path: "Sources/Dependencies"
         ),
     ]
 )
