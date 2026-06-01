@@ -11,7 +11,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/finix-payments/finix-cardscanner-ios-sdk.git", branch: "main"),
+        // CardScanner is now compiled into the PaymentSheet binary
     ],
     targets: [
         .binaryTarget(
@@ -22,7 +22,7 @@ let package = Package(
             name: "FinixPaymentSheetWrapper",
             dependencies: [
                 "FinixPaymentSheetBinary",
-                .product(name: "FinixCardScanSDK", package: "finix-cardscanner-ios-sdk"),
+                // CardScanner is compiled into FinixPaymentSheetBinary
             ],
             path: "Sources/Wrapper"
         ),
