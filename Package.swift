@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "FinixPaymentSheet",
-            targets: ["FinixPaymentSheetWrapper"]
+            targets: ["FinixPaymentSheet"]
         ),
     ],
     dependencies: [
@@ -15,16 +15,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "FinixPaymentSheetBinary",
+            name: "FinixPaymentSheet",
             path: "Sources/FinixPaymentSheet.xcframework"
-        ),
-        .target(
-            name: "FinixPaymentSheetWrapper",
-            dependencies: [
-                "FinixPaymentSheetBinary",
-                // CardScanner is compiled into FinixPaymentSheetBinary
-            ],
-            path: "Sources/Wrapper"
         ),
     ]
 )
