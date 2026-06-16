@@ -3993,9 +3993,75 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "merchantId",
+            "printedName": "merchantId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FinixPaymentSheet@objc(cs)FinixCredentials(py)merchantId",
+            "mangledName": "$s17FinixPaymentSheet0A11CredentialsC10merchantIdSSSgvp",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FinixPaymentSheet@objc(cs)FinixCredentials(im)merchantId",
+                "mangledName": "$s17FinixPaymentSheet0A11CredentialsC10merchantIdSSSgvg",
+                "moduleName": "FinixPaymentSheet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(applicationId:environment:)",
+            "printedName": "init(applicationId:environment:merchantId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4014,13 +4080,28 @@
                 "name": "FinixAPIEndpoint",
                 "printedName": "FinixPaymentSheet.FinixAPIEndpoint",
                 "usr": "c:@M@FinixPaymentSheet@E@FinixAPIEndpoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@FinixPaymentSheet@objc(cs)FinixCredentials(im)initWithApplicationId:environment:",
-            "mangledName": "$s17FinixPaymentSheet0A11CredentialsC13applicationId11environmentACSS_AA0A11APIEndpointOtcfc",
+            "usr": "c:@M@FinixPaymentSheet@objc(cs)FinixCredentials(im)initWithApplicationId:environment:merchantId:",
+            "mangledName": "$s17FinixPaymentSheet0A11CredentialsC13applicationId11environment08merchantF0ACSS_AA0A11APIEndpointOSSSgtcfc",
             "moduleName": "FinixPaymentSheet",
-            "objc_name": "initWithApplicationId:environment:",
+            "objc_name": "initWithApplicationId:environment:merchantId:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -19327,42 +19408,42 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 6970,
+      "offset": 7075,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 6975,
+      "offset": 7080,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7024,
+      "offset": 7129,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7029,
+      "offset": 7134,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7081,
+      "offset": 7186,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7086,
+      "offset": 7191,
       "length": 1,
       "value": "2"
     },
@@ -20020,35 +20101,35 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 3770,
+      "offset": 3818,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 3857,
+      "offset": 3905,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 3996,
+      "offset": 4044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 4933,
+      "offset": 4981,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5024,
+      "offset": 5072,
       "length": 4,
       "value": "true"
     },

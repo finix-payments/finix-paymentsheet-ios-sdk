@@ -139,7 +139,8 @@ extension FinixPaymentSheet.ColorTheme {
 @objc public class FinixCredentials : ObjectiveC.NSObject {
   @objc final public let applicationId: Swift.String
   @objc final public let environment: FinixPaymentSheet.FinixAPIEndpoint
-  @objc public init(applicationId: Swift.String, environment: FinixPaymentSheet.FinixAPIEndpoint)
+  @objc final public let merchantId: Swift.String?
+  @objc public init(applicationId: Swift.String, environment: FinixPaymentSheet.FinixAPIEndpoint, merchantId: Swift.String? = nil)
   @objc deinit
 }
 public struct FinixError : Swift.Error {

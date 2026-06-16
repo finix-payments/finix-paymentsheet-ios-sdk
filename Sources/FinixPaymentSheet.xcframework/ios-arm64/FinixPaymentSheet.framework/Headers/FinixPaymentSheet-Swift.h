@@ -321,7 +321,8 @@ SWIFT_CLASS("_TtC17FinixPaymentSheet16FinixCredentials")
 @interface FinixCredentials : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull applicationId;
 @property (nonatomic, readonly) enum FinixAPIEndpoint environment;
-- (nonnull instancetype)initWithApplicationId:(NSString * _Nonnull)applicationId environment:(enum FinixAPIEndpoint)environment OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable merchantId;
+- (nonnull instancetype)initWithApplicationId:(NSString * _Nonnull)applicationId environment:(enum FinixAPIEndpoint)environment merchantId:(NSString * _Nullable)merchantId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
