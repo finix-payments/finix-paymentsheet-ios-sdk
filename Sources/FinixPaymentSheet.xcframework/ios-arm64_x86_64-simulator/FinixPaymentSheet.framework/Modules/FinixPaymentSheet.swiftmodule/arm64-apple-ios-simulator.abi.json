@@ -744,20 +744,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "AddressProtocol",
             "printedName": "AddressProtocol",
             "usr": "s:17FinixPaymentSheet15AddressProtocolP",
@@ -765,10 +751,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -1335,17 +1335,40 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FinixPaymentSheet.BankAccountType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankAccountType",
+                        "printedName": "FinixPaymentSheet.BankAccountType",
+                        "usr": "s:17FinixPaymentSheet15BankAccountTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1399,33 +1422,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[FinixPaymentSheet.BankAccountType]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BankAccountType",
-                        "printedName": "FinixPaymentSheet.BankAccountType",
-                        "usr": "s:17FinixPaymentSheet15BankAccountTypeO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -1606,6 +1606,327 @@
             ],
             "usr": "s:7SwiftUI12ViewModifierP",
             "mangledName": "$s7SwiftUI12ViewModifierP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentSheetWithCustomNavigationBar",
+        "printedName": "PaymentSheetWithCustomNavigationBar",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(credentials:configuration:style:theme:showCancelButton:showCountry:navigationBar:onSuccess:onCancel:onFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentSheetWithCustomNavigationBar",
+                "printedName": "FinixPaymentSheet.PaymentSheetWithCustomNavigationBar<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:17FinixPaymentSheet0bC23WithCustomNavigationBarV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FinixCredentials",
+                "printedName": "FinixPaymentSheet.FinixCredentials",
+                "usr": "c:@M@FinixPaymentSheet@objc(cs)FinixCredentials"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FinixPaymentSheet.PaymentInputController.Configuration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "FinixPaymentSheet.PaymentInputController.Configuration",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC13ConfigurationC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Style",
+                "printedName": "FinixPaymentSheet.PaymentInputController.Style",
+                "hasDefaultArg": true,
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC5StyleO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ColorThemeProtocol",
+                "printedName": "any FinixPaymentSheet.ColorThemeProtocol",
+                "hasDefaultArg": true,
+                "usr": "s:17FinixPaymentSheet18ColorThemeProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(@escaping () -> (), @escaping () -> ()) -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(() -> (), () -> ())",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.TokenResponse) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TokenResponse",
+                    "printedName": "FinixPaymentSheet.TokenResponse",
+                    "usr": "c:@M@FinixPaymentSheet@objc(cs)TokenResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17FinixPaymentSheet0bC23WithCustomNavigationBarV11credentials13configuration5style5theme16showCancelButton0L7Country010navigationG09onSuccess0qM00Q7FailureACyxGAA0A11CredentialsC_AA0B15InputControllerC13ConfigurationCSgAR5StyleOAA18ColorThemeProtocol_pS2bxyyc_yyctcyAA13TokenResponseCcyycys5Error_pctcfc",
+            "mangledName": "$s17FinixPaymentSheet0bC23WithCustomNavigationBarV11credentials13configuration5style5theme16showCancelButton0L7Country010navigationG09onSuccess0qM00Q7FailureACyxGAA0A11CredentialsC_AA0B15InputControllerC13ConfigurationCSgAR5StyleOAA18ColorThemeProtocol_pS2bxyyc_yyctcyAA13TokenResponseCcyycys5Error_pctcfc",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<NavigationBar where NavigationBar : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC23WithCustomNavigationBarV4bodyQrvp",
+            "mangledName": "$s17FinixPaymentSheet0bC23WithCustomNavigationBarV4bodyQrvp",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC23WithCustomNavigationBarV4bodyQrvg",
+                "mangledName": "$s17FinixPaymentSheet0bC23WithCustomNavigationBarV4bodyQrvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<NavigationBar where NavigationBar : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17FinixPaymentSheet0bC23WithCustomNavigationBarV",
+        "mangledName": "$s17FinixPaymentSheet0bC23WithCustomNavigationBarV",
+        "moduleName": "FinixPaymentSheet",
+        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<NavigationBar where NavigationBar : SwiftUI.View>",
+        "intro_iOS": "16.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
           },
           {
             "kind": "Conformance",
@@ -2250,45 +2571,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -2299,10 +2585,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2313,10 +2613,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -2556,17 +2877,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2780,17 +3101,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3061,17 +3382,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3832,24 +4153,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "ThemeWithFieldStyling",
             "printedName": "ThemeWithFieldStyling",
             "usr": "s:17FinixPaymentSheet21ThemeWithFieldStylingP",
             "mangledName": "$s17FinixPaymentSheet21ThemeWithFieldStylingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -3864,6 +4178,13 @@
             "printedName": "ColorThemeProtocol",
             "usr": "s:17FinixPaymentSheet18ColorThemeProtocolP",
             "mangledName": "$s17FinixPaymentSheet18ColorThemeProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -4151,38 +4472,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -4193,10 +4486,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -4207,10 +4514,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -4323,6 +4644,67 @@
                 "declKind": "Accessor",
                 "usr": "s:17FinixPaymentSheet0A5ErrorV7messageSSvg",
                 "mangledName": "$s17FinixPaymentSheet0A5ErrorV7messageSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logref",
+            "printedName": "logref",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0A5ErrorV6logrefSSSgvp",
+            "mangledName": "$s17FinixPaymentSheet0A5ErrorV6logrefSSSgvp",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0A5ErrorV6logrefSSSgvg",
+                "mangledName": "$s17FinixPaymentSheet0A5ErrorV6logrefSSSgvg",
                 "moduleName": "FinixPaymentSheet",
                 "implicit": true,
                 "accessorKind": "get"
@@ -5058,13 +5440,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -5072,10 +5447,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -5885,45 +6274,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+            "name": "PaymentActionDelegate",
+            "printedName": "PaymentActionDelegate",
+            "usr": "c:@M@FinixPaymentSheet@objc(pl)PaymentActionDelegate",
+            "mangledName": "$s17FinixPaymentSheet0B14ActionDelegateP"
           },
           {
             "kind": "Conformance",
@@ -5934,10 +6288,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -5948,10 +6316,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "PaymentActionDelegate",
-            "printedName": "PaymentActionDelegate",
-            "usr": "c:@M@FinixPaymentSheet@objc(pl)PaymentActionDelegate",
-            "mangledName": "$s17FinixPaymentSheet0B14ActionDelegateP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -7899,6 +8288,350 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "postalCodeInternationalTitle",
+            "printedName": "postalCodeInternationalTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP28postalCodeInternationalTitleSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP28postalCodeInternationalTitleSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP28postalCodeInternationalTitleSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP28postalCodeInternationalTitleSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postalCodeInternationalPlaceholder",
+            "printedName": "postalCodeInternationalPlaceholder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP34postalCodeInternationalPlaceholderSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP34postalCodeInternationalPlaceholderSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP34postalCodeInternationalPlaceholderSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP34postalCodeInternationalPlaceholderSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyboardNextTitle",
+            "printedName": "keyboardNextTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardNextTitleSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardNextTitleSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardNextTitleSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardNextTitleSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyboardDoneTitle",
+            "printedName": "keyboardDoneTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardDoneTitleSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardDoneTitleSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardDoneTitleSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolP17keyboardDoneTitleSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postalCodeInternationalTitle",
+            "printedName": "postalCodeInternationalTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE28postalCodeInternationalTitleSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE28postalCodeInternationalTitleSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE28postalCodeInternationalTitleSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE28postalCodeInternationalTitleSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postalCodeInternationalPlaceholder",
+            "printedName": "postalCodeInternationalPlaceholder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE34postalCodeInternationalPlaceholderSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE34postalCodeInternationalPlaceholderSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE34postalCodeInternationalPlaceholderSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE34postalCodeInternationalPlaceholderSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyboardNextTitle",
+            "printedName": "keyboardNextTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardNextTitleSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardNextTitleSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardNextTitleSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardNextTitleSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyboardDoneTitle",
+            "printedName": "keyboardDoneTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardDoneTitleSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardDoneTitleSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardDoneTitleSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC20LocalizationProtocolPAAE17keyboardDoneTitleSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "sugared_genericSig": "<Self where Self : FinixPaymentSheet.PaymentSheetLocalizationProtocol>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
@@ -8933,20 +9666,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "FieldStylingConfigurationProtocol",
             "printedName": "FieldStylingConfigurationProtocol",
             "usr": "s:17FinixPaymentSheet33FieldStylingConfigurationProtocolP",
@@ -8954,10 +9673,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -9488,20 +10221,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "FieldStylingConfigurationProtocol",
             "printedName": "FieldStylingConfigurationProtocol",
             "usr": "s:17FinixPaymentSheet33FieldStylingConfigurationProtocolP",
@@ -9509,10 +10228,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -11341,20 +12074,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "ColorThemeProtocol",
             "printedName": "ColorThemeProtocol",
             "usr": "s:17FinixPaymentSheet18ColorThemeProtocolP",
@@ -11362,10 +12081,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -12313,17 +13046,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -12513,10 +13246,207 @@
               },
               {
                 "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Escapable",
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "PostalCodeFormat",
+            "printedName": "PostalCodeFormat",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "usZipCode",
+                "printedName": "usZipCode",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FinixPaymentSheet.PaymentInputController.PostalCodeFormat.Type) -> FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PostalCodeFormat",
+                        "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                        "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PostalCodeFormat",
+                            "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                            "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO05usZipG0yA2EmF",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO05usZipG0yA2EmF",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "RawDocComment",
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "international",
+                "printedName": "international",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FinixPaymentSheet.PaymentInputController.PostalCodeFormat.Type) -> FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PostalCodeFormat",
+                        "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                        "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PostalCodeFormat",
+                            "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                            "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO13internationalyA2EmF",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO13internationalyA2EmF",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "RawDocComment",
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PostalCodeFormat",
+                        "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                        "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO8rawValueAESgSi_tcfc",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO8rawValueAESgSi_tcfc",
+                "moduleName": "FinixPaymentSheet",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO8rawValueSivp",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO8rawValueSivp",
+                "moduleName": "FinixPaymentSheet",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO8rawValueSivg",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO8rawValueSivg",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO",
+            "mangledName": "$s17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO",
+            "moduleName": "FinixPaymentSheet",
+            "objc_name": "PaymentInputControllerPostalCodeFormat",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
               },
               {
                 "kind": "Conformance",
@@ -12527,10 +13457,39 @@
               },
               {
                 "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
                 "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
               }
             ]
           },
@@ -12767,38 +13726,10 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
               },
               {
                 "kind": "Conformance",
@@ -12809,10 +13740,24 @@
               },
               {
                 "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
               },
               {
                 "kind": "Conformance",
@@ -12823,10 +13768,24 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
               }
             ]
           },
@@ -12885,6 +13844,74 @@
                 "mangledName": "$s17FinixPaymentSheet0B15InputControllerC13ConfigurationC5title8branding11buttonTitle18enableCardScanningAESSSg_AC8BrandingCSSSbtcfc",
                 "moduleName": "FinixPaymentSheet",
                 "objc_name": "initWithTitle:branding:buttonTitle:enableCardScanning:",
+                "declAttributes": [
+                  "Convenience",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "init_kind": "Convenience"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(title:branding:buttonTitle:enableCardScanning:postalCodeFormat:postalCodeRequired:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "FinixPaymentSheet.PaymentInputController.Configuration",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC13ConfigurationC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Branding",
+                    "printedName": "FinixPaymentSheet.PaymentInputController.Branding",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC8BrandingC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PostalCodeFormat",
+                    "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC13ConfigurationC5title8branding11buttonTitle18enableCardScanning16postalCodeFormat0nO8RequiredAESSSg_AC8BrandingCSSSbAC06PostaloP0OSbtcfc",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC13ConfigurationC5title8branding11buttonTitle18enableCardScanning16postalCodeFormat0nO8RequiredAESSSg_AC8BrandingCSSSbAC06PostaloP0OSbtcfc",
+                "moduleName": "FinixPaymentSheet",
+                "objc_name": "initWithTitle:branding:buttonTitle:enableCardScanning:postalCodeFormat:postalCodeRequired:",
                 "declAttributes": [
                   "AccessControl",
                   "ObjC"
@@ -13109,6 +14136,108 @@
               },
               {
                 "kind": "Var",
+                "name": "postalCodeFormat",
+                "printedName": "postalCodeFormat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PostalCodeFormat",
+                    "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC13ConfigurationC16postalCodeFormatAC06PostalhI0Ovp",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC13ConfigurationC16postalCodeFormatAC06PostalhI0Ovp",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PostalCodeFormat",
+                        "printedName": "FinixPaymentSheet.PaymentInputController.PostalCodeFormat",
+                        "usr": "s:17FinixPaymentSheet0B15InputControllerC16PostalCodeFormatO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC13ConfigurationC16postalCodeFormatAC06PostalhI0Ovg",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC13ConfigurationC16postalCodeFormatAC06PostalhI0Ovg",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "postalCodeRequired",
+                "printedName": "postalCodeRequired",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC13ConfigurationC18postalCodeRequiredSbvp",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC13ConfigurationC18postalCodeRequiredSbvp",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC13ConfigurationC18postalCodeRequiredSbvg",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC13ConfigurationC18postalCodeRequiredSbvg",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "default",
                 "printedName": "default",
                 "children": [
@@ -13203,38 +14332,10 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
               },
               {
                 "kind": "Conformance",
@@ -13245,10 +14346,24 @@
               },
               {
                 "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
               },
               {
                 "kind": "Conformance",
@@ -13259,10 +14374,24 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
               }
             ]
           },
@@ -15125,6 +16254,351 @@
                     "declKind": "Accessor",
                     "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC15postalCodeTitleSSvM",
                     "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC15postalCodeTitleSSvM",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "postalCodeInternationalTitle",
+                "printedName": "postalCodeInternationalTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvp",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvp",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvg",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvg",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvs",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvs",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvM",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC28postalCodeInternationalTitleSSvM",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "postalCodeInternationalPlaceholder",
+                "printedName": "postalCodeInternationalPlaceholder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvp",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvp",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvg",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvg",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvs",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvs",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvM",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC34postalCodeInternationalPlaceholderSSvM",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "keyboardNextTitle",
+                "printedName": "keyboardNextTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvp",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvp",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvg",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvg",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvs",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvs",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvM",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardNextTitleSSvM",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "keyboardDoneTitle",
+                "printedName": "keyboardDoneTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvp",
+                "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvp",
+                "moduleName": "FinixPaymentSheet",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvg",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvg",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvs",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvs",
+                    "moduleName": "FinixPaymentSheet",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvM",
+                    "mangledName": "$s17FinixPaymentSheet0B15InputControllerC12LocalizationC17keyboardDoneTitleSSvM",
                     "moduleName": "FinixPaymentSheet",
                     "implicit": true,
                     "accessorKind": "_modify"
@@ -17161,45 +18635,10 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+                "name": "PaymentSheetErrorLocalizationProtocol",
+                "printedName": "PaymentSheetErrorLocalizationProtocol",
+                "usr": "s:17FinixPaymentSheet0bC25ErrorLocalizationProtocolP",
+                "mangledName": "$s17FinixPaymentSheet0bC25ErrorLocalizationProtocolP"
               },
               {
                 "kind": "Conformance",
@@ -17210,10 +18649,24 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
               },
               {
                 "kind": "Conformance",
@@ -17224,10 +18677,31 @@
               },
               {
                 "kind": "Conformance",
-                "name": "PaymentSheetErrorLocalizationProtocol",
-                "printedName": "PaymentSheetErrorLocalizationProtocol",
-                "usr": "s:17FinixPaymentSheet0bC25ErrorLocalizationProtocolP",
-                "mangledName": "$s17FinixPaymentSheet0bC25ErrorLocalizationProtocolP"
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
               }
             ]
           },
@@ -17254,6 +18728,39 @@
             "mangledName": "$s17FinixPaymentSheet0B15InputControllerC21textFieldShouldReturnySbSo06UITextG0CF",
             "moduleName": "FinixPaymentSheet",
             "objc_name": "textFieldShouldReturn:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "textFieldDidBeginEditing",
+            "printedName": "textFieldDidBeginEditing(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITextField",
+                "printedName": "UIKit.UITextField",
+                "usr": "c:objc(cs)UITextField"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FinixPaymentSheet@objc(cs)PaymentInputController(im)textFieldDidBeginEditing:",
+            "mangledName": "$s17FinixPaymentSheet0B15InputControllerC24textFieldDidBeginEditingyySo06UITextG0CF",
+            "moduleName": "FinixPaymentSheet",
+            "objc_name": "textFieldDidBeginEditing:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -17368,38 +18875,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -17410,17 +18889,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -17431,10 +18910,45 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -18344,6 +19858,7 @@
         "declAttributes": [
           "Preconcurrency",
           "TypeEraser",
+          "TypeEraser",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
@@ -18506,38 +20021,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -18548,17 +20035,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -18569,10 +20056,45 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -18583,10 +20105,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -18617,38 +20139,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -18659,10 +20153,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -18673,10 +20181,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -18708,38 +20230,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -18750,17 +20244,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -18771,10 +20265,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -18782,6 +20297,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       }
@@ -19247,56 +20769,63 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 1184,
       "length": 7,
       "value": "\"`~-. \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 1247,
+      "offset": 1540,
       "length": 6,
       "value": "\" #-.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 1710,
+      "offset": 2003,
       "length": 5,
       "value": "\" -.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 2120,
+      "offset": 2413,
       "length": 12,
       "value": "\"0123456789\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 6675,
+      "offset": 2832,
+      "length": 4,
+      "value": "\" -\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
+      "kind": "StringLiteral",
+      "offset": 8490,
       "length": 19,
       "value": "\"PERSONAL_CHECKING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 6722,
+      "offset": 8537,
       "length": 18,
       "value": "\"PERSONAL_SAVINGS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 6769,
+      "offset": 8584,
       "length": 19,
       "value": "\"BUSINESS_CHECKING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 6816,
+      "offset": 8631,
       "length": 18,
       "value": "\"BUSINESS_SAVINGS\""
     },
@@ -19325,6 +20854,20 @@
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
       "kind": "BooleanLiteral",
       "offset": 2846,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5541,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5576,
       "length": 5,
       "value": "false"
     },
@@ -19408,42 +20951,42 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7075,
+      "offset": 7206,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7080,
+      "offset": 7211,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7129,
+      "offset": 7260,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7134,
+      "offset": 7265,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7186,
+      "offset": 7317,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7191,
+      "offset": 7322,
       "length": 1,
       "value": "2"
     },
@@ -20031,28 +21574,28 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 2209,
+      "offset": 2540,
       "length": 22,
       "value": "\"SDK not initialized!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 2242,
+      "offset": 2573,
       "length": 48,
       "value": "\"Error raised when SDK has not been initialized\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 2398,
+      "offset": 2729,
       "length": 26,
       "value": "\"No card reader connected\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2766,
       "length": 40,
       "value": "\"Error when no card reader is connected\""
     },
@@ -20170,596 +21713,645 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1573,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1868,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4984,
+      "offset": 2318,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6161,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 5503,
+      "offset": 7670,
       "length": 10,
       "value": "\"Tokenize\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5535,
+      "offset": 7702,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3043,
+      "offset": 4139,
       "length": 36,
       "value": "\"Card numbers can only contain 0-9.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3109,
+      "offset": 4205,
       "length": 33,
       "value": "\"Please enter valid card number.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3176,
+      "offset": 4272,
       "length": 29,
       "value": "\"Please select account type.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3234,
+      "offset": 4330,
       "length": 20,
       "value": "\"Invalid selection.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3290,
+      "offset": 4386,
       "length": 23,
       "value": "\"Enter month and year.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3349,
+      "offset": 4445,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3399,
+      "offset": 4495,
       "length": 21,
       "value": "\"Month must be 1-12.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3449,
+      "offset": 4545,
       "length": 18,
       "value": "\"Enter year (YY).\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3495,
+      "offset": 4591,
       "length": 21,
       "value": "\"Expiry in the past.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3545,
+      "offset": 4641,
       "length": 14,
       "value": "\"Enter state.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3584,
+      "offset": 4680,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3639,
+      "offset": 4735,
       "length": 25,
       "value": "\"Minimum of %@ required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3712,
+      "offset": 4808,
       "length": 6,
       "value": "\"Name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3743,
+      "offset": 4839,
       "length": 9,
       "value": "\"Address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3782,
+      "offset": 4878,
       "length": 8,
       "value": "\"Line 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3812,
+      "offset": 4908,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3842,
+      "offset": 4938,
       "length": 7,
       "value": "\"State\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3877,
-      "length": 13,
-      "value": "\"Postal Code\""
+      "offset": 4973,
+      "length": 10,
+      "value": "\"Zip Code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3918,
+      "offset": 5011,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 3959,
+      "offset": 5052,
       "length": 8,
       "value": "\"Expiry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4018,
+      "offset": 5111,
       "length": 9,
       "value": "\"CVV\/CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4088,
+      "offset": 5181,
       "length": 16,
       "value": "\"Account Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4139,
+      "offset": 5232,
       "length": 16,
       "value": "\"Routing Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4188,
+      "offset": 5281,
       "length": 14,
       "value": "\"Account Type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4233,
+      "offset": 5326,
       "length": 19,
       "value": "\"Country or Region\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4280,
+      "offset": 5373,
       "length": 12,
       "value": "\"First Last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4323,
+      "offset": 5416,
       "length": 17,
       "value": "\"123 Main Street\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4376,
+      "offset": 5469,
       "length": 4,
       "value": "\"#1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4408,
+      "offset": 5501,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4444,
+      "offset": 5537,
       "length": 4,
       "value": "\"CA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4482,
+      "offset": 5575,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4523,
+      "offset": 5616,
       "length": 21,
       "value": "\"0000 0000 0000 0000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4578,
+      "offset": 5671,
       "length": 7,
       "value": "\"MM\/YY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4642,
+      "offset": 5735,
       "length": 5,
       "value": "\"111\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4714,
+      "offset": 5807,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4762,
+      "offset": 5855,
       "length": 11,
       "value": "\"000000000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4812,
+      "offset": 5905,
       "length": 18,
       "value": "\"Checking\/Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4870,
+      "offset": 5963,
       "length": 19,
       "value": "\"Personal Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4928,
+      "offset": 6021,
       "length": 18,
       "value": "\"Personal Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4986,
+      "offset": 6079,
       "length": 19,
       "value": "\"Business Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5044,
+      "offset": 6137,
       "length": 18,
       "value": "\"Business Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 7608,
+      "offset": 8701,
       "length": 36,
       "value": "\"Card numbers can only contain 0-9.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 7692,
+      "offset": 8785,
       "length": 33,
       "value": "\"Please enter valid card number.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 7777,
+      "offset": 8870,
       "length": 29,
       "value": "\"Please select account type.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 7853,
+      "offset": 8946,
       "length": 20,
       "value": "\"Invalid selection.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 7927,
+      "offset": 9020,
       "length": 23,
       "value": "\"Enter month and year.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8004,
+      "offset": 9097,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8072,
+      "offset": 9165,
       "length": 21,
       "value": "\"Month must be 1-12.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8140,
+      "offset": 9233,
       "length": 18,
       "value": "\"Enter year (YY).\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8204,
+      "offset": 9297,
       "length": 21,
       "value": "\"Expiry in the past.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8272,
+      "offset": 9365,
       "length": 14,
       "value": "\"Enter state.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8329,
+      "offset": 9422,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8403,
+      "offset": 9496,
       "length": 25,
       "value": "\"Minimum of %@ required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8493,
+      "offset": 9586,
       "length": 6,
       "value": "\"Name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8542,
+      "offset": 9635,
       "length": 9,
       "value": "\"Address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8599,
+      "offset": 9692,
       "length": 8,
       "value": "\"Line 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8647,
+      "offset": 9740,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8695,
+      "offset": 9788,
       "length": 7,
       "value": "\"State\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8748,
+      "offset": 9841,
+      "length": 10,
+      "value": "\"Zip Code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 10041,
       "length": 13,
       "value": "\"Postal Code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8807,
+      "offset": 10119,
+      "length": 9,
+      "value": "\"A1A 1A1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 10176,
+      "length": 6,
+      "value": "\"Next\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 10230,
+      "length": 6,
+      "value": "\"Done\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 10283,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8866,
+      "offset": 10342,
       "length": 8,
       "value": "\"Expiry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8917,
+      "offset": 10393,
       "length": 9,
       "value": "\"CVV\/CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8979,
+      "offset": 10455,
       "length": 16,
       "value": "\"Account Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9048,
+      "offset": 10524,
       "length": 16,
       "value": "\"Routing Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9115,
+      "offset": 10591,
       "length": 14,
       "value": "\"Account Type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9178,
+      "offset": 10654,
       "length": 19,
       "value": "\"Country or Region\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9268,
+      "offset": 10744,
       "length": 12,
       "value": "\"First Last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9329,
+      "offset": 10805,
       "length": 17,
       "value": "\"123 Main Street\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9400,
+      "offset": 10876,
       "length": 4,
       "value": "\"#1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9450,
+      "offset": 10926,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9504,
+      "offset": 10980,
       "length": 4,
       "value": "\"CA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9560,
+      "offset": 11036,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9619,
+      "offset": 11095,
       "length": 21,
       "value": "\"0000 0000 0000 0000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9692,
+      "offset": 11168,
       "length": 7,
       "value": "\"MM\/YY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9748,
+      "offset": 11224,
       "length": 5,
       "value": "\"111\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9812,
+      "offset": 11288,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9878,
+      "offset": 11354,
       "length": 11,
       "value": "\"000000000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9946,
+      "offset": 11422,
       "length": 18,
       "value": "\"Checking\/Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10052,
+      "offset": 11528,
       "length": 19,
       "value": "\"Personal Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10128,
+      "offset": 11604,
       "length": 18,
       "value": "\"Personal Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10204,
+      "offset": 11680,
       "length": 19,
       "value": "\"Business Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10280,
+      "offset": 11756,
       "length": 18,
       "value": "\"Business Savings\""
     },
@@ -21025,35 +22617,42 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5937,
+      "offset": 7182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6007,
+      "offset": 7252,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6022,
+      "offset": 7267,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8084,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11033,
+      "offset": 12538,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11080,
+      "offset": 12585,
       "length": 5,
       "value": "false"
     },
@@ -21287,6 +22886,13 @@
       "offset": 1837,
       "length": 1,
       "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/StringField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 543,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Style.swift",
