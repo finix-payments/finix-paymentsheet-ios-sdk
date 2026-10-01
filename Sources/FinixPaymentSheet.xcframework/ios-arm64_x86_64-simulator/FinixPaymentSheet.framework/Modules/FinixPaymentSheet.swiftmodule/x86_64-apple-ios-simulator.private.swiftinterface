@@ -118,7 +118,6 @@ extension Swift.RandomAccessCollection {
 @objc public enum FinixAPIEndpoint : Swift.Int {
   case Sandbox = 0
   case Live = 1
-  case QA = 2
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

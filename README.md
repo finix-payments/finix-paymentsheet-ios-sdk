@@ -11,6 +11,14 @@ Add the following to your `Package.swift`:
 ```swift
 dependencies: [
     .package(url: "https://github.com/finix-payments/finix-paymentsheet-ios-sdk.git", from: "1.0.10")
+],
+targets: [
+    .target(
+        name: "YourApp",
+        dependencies: [
+            .product(name: "FinixPaymentSheet", package: "finix-paymentsheet-ios-sdk")
+        ]
+    )
 ]
 ```
 
@@ -22,13 +30,12 @@ Or in Xcode:
 ## Requirements
 
 - iOS 15.0+
-- Xcode 14.0+
-- Swift 5.9+
+- Xcode 26.6+
 
-## Source Code
+## Demo App
 
-This repository contains only the pre-built binary XCFramework. For source code, see:
-- [PaymentSheet Source Repository](https://github.com/finix-payments/PaymentSheet) (Private)
+This repository contains only the pre-built binary XCFramework. For a working integration, see the
+[FinixPaymentSheet demo app](https://github.com/finix-payments/FinixPaymentSheet).
 
 ## Support
 

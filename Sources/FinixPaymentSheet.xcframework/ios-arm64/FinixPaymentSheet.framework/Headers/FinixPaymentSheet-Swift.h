@@ -376,7 +376,6 @@ extern "C" {
 typedef SWIFT_ENUM(NSInteger, FinixAPIEndpoint, open) {
   FinixAPIEndpointSandbox = 0,
   FinixAPIEndpointLive = 1,
-  FinixAPIEndpointQA = 2,
 };
 
 @class NSString;

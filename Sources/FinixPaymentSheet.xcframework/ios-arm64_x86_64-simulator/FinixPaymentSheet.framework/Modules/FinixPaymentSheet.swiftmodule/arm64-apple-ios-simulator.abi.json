@@ -3242,47 +3242,6 @@
             "fixedbinaryorder": 1
           },
           {
-            "kind": "Var",
-            "name": "QA",
-            "printedName": "QA",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(FinixPaymentSheet.FinixAPIEndpoint.Type) -> FinixPaymentSheet.FinixAPIEndpoint",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FinixAPIEndpoint",
-                    "printedName": "FinixPaymentSheet.FinixAPIEndpoint",
-                    "usr": "c:@M@FinixPaymentSheet@E@FinixAPIEndpoint"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "FinixPaymentSheet.FinixAPIEndpoint.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FinixAPIEndpoint",
-                        "printedName": "FinixPaymentSheet.FinixAPIEndpoint",
-                        "usr": "c:@M@FinixPaymentSheet@E@FinixAPIEndpoint"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@FinixPaymentSheet@E@FinixAPIEndpoint@FinixAPIEndpointQA",
-            "mangledName": "$s17FinixPaymentSheet0A11APIEndpointO2QAyA2CmF",
-            "moduleName": "FinixPaymentSheet",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -21236,13 +21195,6 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPIEndpoint.swift",
-      "kind": "IntegerLiteral",
-      "offset": 323,
-      "length": 1,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
       "offset": 1220,
@@ -22989,8 +22941,8 @@
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/PaymentSheetMetadata.swift",
       "kind": "StringLiteral",
       "offset": 313,
-      "length": 7,
-      "value": "\"1.0.9\""
+      "length": 8,
+      "value": "\"1.0.10\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/FinixPaymentSheet-aukddiwnoqbwykgaahwphyhxutsd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FinixPaymentSheet\/IntermediateBuildFilesPath\/FinixPaymentSheet.build\/Release-iphonesimulator\/FinixPaymentSheet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
