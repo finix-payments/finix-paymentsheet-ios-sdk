@@ -10,6 +10,7 @@ import Foundation
 import Swift
 import SwiftUI
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -69,12 +70,15 @@ public enum BankAccountType : Swift.String, Swift.Codable, Swift.CaseIterable {
 }
 @available(iOS 16.0, *)
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func paymentSheetNavigationDestination(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCountry: Swift.Bool = false, @SwiftUICore.ViewBuilder navigationBar: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> some View, onSuccess: @escaping (FinixPaymentSheet.TokenResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in }) -> some SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func paymentSheetNavigationDestination(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCountry: Swift.Bool = false, @SwiftUICore.ViewBuilder navigationBar: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> some View, onSuccess: @escaping (FinixPaymentSheet.PaymentSheetResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in }) -> some SwiftUICore.View
+  
+  @available(*, deprecated, message: "Use paymentSheetNavigationDestination with PaymentSheetResponse callback instead")
+  @_disfavoredOverload @_Concurrency.MainActor @preconcurrency public func paymentSheetNavigationDestination(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCountry: Swift.Bool = false, @SwiftUICore.ViewBuilder navigationBar: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> some View, onSuccess: @escaping (FinixPaymentSheet.TokenizedResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in }) -> some SwiftUICore.View
   
 }
 @available(iOS 16.0, *)
 @_Concurrency.MainActor @preconcurrency public struct PaymentSheetWithCustomNavigationBar<NavigationBar> : SwiftUICore.View where NavigationBar : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCountry: Swift.Bool = false, @SwiftUICore.ViewBuilder navigationBar: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> NavigationBar, onSuccess: @escaping (FinixPaymentSheet.TokenResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in })
+  @_Concurrency.MainActor @preconcurrency public init(credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCountry: Swift.Bool = false, @SwiftUICore.ViewBuilder navigationBar: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> NavigationBar, onSuccess: @escaping (FinixPaymentSheet.PaymentSheetResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in })
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -84,7 +88,7 @@ extension SwiftUICore.View {
 extension Swift.RandomAccessCollection {
   public func bisectToFirstIndex(where predicate: (Self.Element) throws -> Swift.Bool) rethrows -> Self.Index?
 }
-@objc public class TokenResponse : ObjectiveC.NSObject, Swift.Decodable {
+@objc(TokenResponse) public class TokenizedResponse : ObjectiveC.NSObject, Swift.Decodable {
   @objc final public let id: Swift.String
   @objc final public let fingerprint: Swift.String
   @objc final public let created: Foundation.Date
@@ -93,6 +97,21 @@ extension Swift.RandomAccessCollection {
   @objc final public let expires: Foundation.Date
   @objc final public let isoCurrency: FinixPaymentSheet.ISOCurrency
   required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+@available(*, deprecated, renamed: "TokenizedResponse")
+public typealias TokenResponse = FinixPaymentSheet.TokenizedResponse
+@objc(PaymentSheetResponse) public class PaymentSheetResponse : ObjectiveC.NSObject {
+  @objc final public let tokenizedResponse: FinixPaymentSheet.TokenizedResponse
+  @objc public var threeDSResponse: FinixPaymentSheet.ThreeDSResponse?
+  @objc public init(tokenizedResponse: FinixPaymentSheet.TokenizedResponse)
+  @objc public init(tokenizedResponse: FinixPaymentSheet.TokenizedResponse, threeDSResponse: FinixPaymentSheet.ThreeDSResponse?)
+  @objc public var threeDSWasAttempted: Swift.Bool {
+    @objc get
+  }
+  @objc public var threeDSSucceeded: Swift.Bool {
+    @objc get
+  }
   @objc deinit
 }
 @objc public enum PaymentInstrumentType : Swift.Int, Swift.Codable {
@@ -175,6 +194,15 @@ public struct FinixError : Swift.Error {
     case CardInputError
     case InvalidCurrencyCode
     case NoCardData
+    case ThreeDSSessionCreationFailed
+    case ThreeDSChallengeLoadFailed
+    case ThreeDSAuthenticationFailed
+    case ThreeDSTimeout
+    case ThreeDSCancelled
+    case ThreeDSInvalidRedirect
+    case ThreeDSResultRetrievalFailed
+    case ThreeDSConfigurationMissing
+    case ThreeDSInvalidConfiguration
   }
 }
 @objc public class PaymentAction : ObjectiveC.NSObject {
@@ -182,6 +210,7 @@ public struct FinixError : Swift.Error {
   @objc public var configuration: FinixPaymentSheet.PaymentInputController.Configuration
   @objc public var localization: FinixPaymentSheet.PaymentInputController.Localization
   @objc weak public var delegate: (any FinixPaymentSheet.PaymentActionDelegate)?
+  @objc public static func handleThreeDSRedirect(url: Foundation.URL) -> Swift.Bool
   @objc public func paymentSheetWithStyle(_ style: FinixPaymentSheet.PaymentInputController.Style, showCancelButton: Swift.Bool, showCancelItem: Swift.Bool) -> FinixPaymentSheet.PaymentInputController
   @objc public func bankPaymentSheetWithCancelButton(_ showCancelButton: Swift.Bool, cancelItem showCancelItem: Swift.Bool) -> FinixPaymentSheet.PaymentInputController
   @objc public func present(from presenter: UIKit.UIViewController, paymentSheet: FinixPaymentSheet.PaymentInputController, animated: Swift.Bool)
@@ -194,12 +223,14 @@ extension FinixPaymentSheet.PaymentAction {
   public func bankPaymentSheet(showCancelButton: Swift.Bool = true, showCancelItem: Swift.Bool = true, accountType: FinixPaymentSheet.BankAccountType? = nil) -> FinixPaymentSheet.PaymentInputController
 }
 extension FinixPaymentSheet.PaymentAction : FinixPaymentSheet.PaymentActionDelegate {
-  @objc dynamic public func didSucceed(paymentController: FinixPaymentSheet.PaymentInputController, instrument: FinixPaymentSheet.TokenResponse)
+  @objc dynamic public func didSucceed(paymentController: FinixPaymentSheet.PaymentInputController, response: FinixPaymentSheet.PaymentSheetResponse)
   @objc dynamic public func didCancel(paymentController: FinixPaymentSheet.PaymentInputController)
   @objc dynamic public func didFail(paymentController: FinixPaymentSheet.PaymentInputController, error: any Swift.Error)
 }
 @objc public protocol PaymentActionDelegate {
-  @objc func didSucceed(paymentController: FinixPaymentSheet.PaymentInputController, instrument: FinixPaymentSheet.TokenResponse)
+  @objc optional func didSucceed(paymentController: FinixPaymentSheet.PaymentInputController, response: FinixPaymentSheet.PaymentSheetResponse)
+  @available(*, deprecated, message: "Use didSucceed(paymentController:response:) instead")
+  @objc optional func didSucceed(paymentController: FinixPaymentSheet.PaymentInputController, instrument: FinixPaymentSheet.TokenizedResponse)
   @objc func didCancel(paymentController: FinixPaymentSheet.PaymentInputController)
   @objc func didFail(paymentController: FinixPaymentSheet.PaymentInputController, error: any Swift.Error)
 }
@@ -243,13 +274,21 @@ extension FinixPaymentSheet.PaymentInputController {
   }
   @objc public class Configuration : ObjectiveC.NSObject {
     @objc convenience public init(title: Swift.String?, branding: FinixPaymentSheet.PaymentInputController.Branding, buttonTitle: Swift.String, enableCardScanning: Swift.Bool = true)
-    @objc public init(title: Swift.String?, branding: FinixPaymentSheet.PaymentInputController.Branding, buttonTitle: Swift.String, enableCardScanning: Swift.Bool, postalCodeFormat: FinixPaymentSheet.PaymentInputController.PostalCodeFormat, postalCodeRequired: Swift.Bool)
+    @objc convenience public init(title: Swift.String?, branding: FinixPaymentSheet.PaymentInputController.Branding, buttonTitle: Swift.String, enableCardScanning: Swift.Bool, threeDSConfiguration: FinixPaymentSheet.ThreeDSConfiguration?, merchantId: Swift.String?, apiUsername: Swift.String?, apiPassword: Swift.String?, amount: Swift.Int, currency: Swift.String)
+    @objc convenience public init(title: Swift.String?, branding: FinixPaymentSheet.PaymentInputController.Branding, buttonTitle: Swift.String, enableCardScanning: Swift.Bool, postalCodeFormat: FinixPaymentSheet.PaymentInputController.PostalCodeFormat, postalCodeRequired: Swift.Bool)
+    @objc public init(title: Swift.String?, branding: FinixPaymentSheet.PaymentInputController.Branding, buttonTitle: Swift.String, enableCardScanning: Swift.Bool, postalCodeFormat: FinixPaymentSheet.PaymentInputController.PostalCodeFormat, postalCodeRequired: Swift.Bool, threeDSConfiguration: FinixPaymentSheet.ThreeDSConfiguration?, merchantId: Swift.String?, apiUsername: Swift.String?, apiPassword: Swift.String?, amount: Swift.Int, currency: Swift.String)
     @objc final public let title: Swift.String?
     @objc final public let branding: FinixPaymentSheet.PaymentInputController.Branding
     @objc final public let buttonTitle: Swift.String
     @objc final public let enableCardScanning: Swift.Bool
     @objc final public let postalCodeFormat: FinixPaymentSheet.PaymentInputController.PostalCodeFormat
     @objc final public let postalCodeRequired: Swift.Bool
+    @objc final public let threeDSConfiguration: FinixPaymentSheet.ThreeDSConfiguration?
+    @objc final public let merchantId: Swift.String?
+    @objc final public let apiUsername: Swift.String?
+    @objc final public let apiPassword: Swift.String?
+    @objc final public let amount: Swift.Int
+    @objc final public let currency: Swift.String
     @objc public static let `default`: FinixPaymentSheet.PaymentInputController.Configuration
     @objc deinit
   }
@@ -465,7 +504,7 @@ extension FinixPaymentSheet.PaymentInputController : UIKit.UITextFieldDelegate {
 }
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct PaymentSheetModifier : SwiftUICore.ViewModifier {
-  @_Concurrency.MainActor @preconcurrency public init(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCancelItem: Swift.Bool = false, showCountry: Swift.Bool = true, onSuccess: @escaping (FinixPaymentSheet.TokenResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void, onFailure: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public init(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCancelItem: Swift.Bool = false, showCountry: Swift.Bool = true, onSuccess: @escaping (FinixPaymentSheet.PaymentSheetResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void, onFailure: @escaping (any Swift.Error) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency public func body(content: FinixPaymentSheet.PaymentSheetModifier.Content) -> some SwiftUICore.View
   
   @available(iOS 13.0, *)
@@ -473,8 +512,195 @@ extension FinixPaymentSheet.PaymentInputController : UIKit.UITextFieldDelegate {
 }
 @available(iOS 13.0, *)
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func paymentSheet(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCancelItem: Swift.Bool = false, showCountry: Swift.Bool = true, onSuccess: @escaping (FinixPaymentSheet.TokenResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in }) -> some SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func paymentSheet(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCancelItem: Swift.Bool = false, showCountry: Swift.Bool = true, onSuccess: @escaping (FinixPaymentSheet.PaymentSheetResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in }) -> some SwiftUICore.View
   
+  @available(*, deprecated, message: "Use paymentSheet with PaymentSheetResponse callback instead")
+  @_disfavoredOverload @_Concurrency.MainActor @preconcurrency public func paymentSheet(isPresented: SwiftUICore.Binding<Swift.Bool>, credentials: FinixPaymentSheet.FinixCredentials, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil, style: FinixPaymentSheet.PaymentInputController.Style = .partial, theme: any FinixPaymentSheet.ColorThemeProtocol = ColorTheme.default, showCancelButton: Swift.Bool = false, showCancelItem: Swift.Bool = false, showCountry: Swift.Bool = true, onSuccess: @escaping (FinixPaymentSheet.TokenizedResponse) -> Swift.Void, onCancel: @escaping () -> Swift.Void = {}, onFailure: @escaping (any Swift.Error) -> Swift.Void = { _ in }) -> some SwiftUICore.View
+  
+}
+@objc(ThreeDSStatus) public enum ThreeDSStatus : Swift.Int, Swift.Codable {
+  case pending = 0
+  case succeeded = 1
+  case failed = 2
+  case unknown = 99
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var isSuccessful: Swift.Bool {
+    get
+  }
+  public var isInProgress: Swift.Bool {
+    get
+  }
+  public var isTerminal: Swift.Bool {
+    get
+  }
+  public var isComplete: Swift.Bool {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(ThreeDSAuthenticationType) public enum ThreeDSAuthenticationType : Swift.Int, Swift.Codable {
+  case frictionless = 0
+  case challenge = 1
+  case attempt = 2
+  case unknown = 99
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(ThreeDSECI) public enum ThreeDSECI : Swift.Int, Swift.Codable {
+  case authenticated = 0
+  case attempted = 1
+  case nonAuthenticated = 2
+  case unknown = 99
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hasLiabilityShift: Swift.Bool {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(ThreeDSFailureCode) public enum ThreeDSFailureCode : Swift.Int, Swift.Codable, Swift.CaseIterable {
+  case accessControlServerUnavailable = 0
+  case authenticationFailed = 1
+  case authenticationTimedOut = 2
+  case cardNotEnrolled = 3
+  case challengeRequired = 4
+  case directoryServerUnavailable = 5
+  case invalidAcquirer = 6
+  case invalidCard = 7
+  case protocolError = 8
+  case requiredDataElementMissing = 9
+  case suspectedFraud = 10
+  case transactionCancelledByCardholder = 11
+  case transactionNotPermitted = 12
+  case transientSystemFailure = 13
+  case unsupported3DSecureVersion = 14
+  case unknown = 99
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var apiValue: Swift.String {
+    get
+  }
+  public var failureMessage: Swift.String {
+    get
+  }
+  public var isRetryable: Swift.Bool {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [FinixPaymentSheet.ThreeDSFailureCode]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [FinixPaymentSheet.ThreeDSFailureCode] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(ThreeDSConfiguration) public class ThreeDSConfiguration : ObjectiveC.NSObject {
+  @objc final public let redirectScheme: Swift.String
+  @objc final public let isEnabled: Swift.Bool
+  @objc public init(redirectScheme: Swift.String, isEnabled: Swift.Bool = true)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(ThreeDSResponse) public class ThreeDSResponse : ObjectiveC.NSObject {
+  @objc final public let sessionId: Swift.String
+  @objc final public let sourceId: Swift.String
+  @objc final public let state: FinixPaymentSheet.ThreeDSStatus
+  final public let authenticationType: FinixPaymentSheet.ThreeDSAuthenticationType?
+  @objc final public let cardholderAuthentication: Swift.String?
+  @objc final public let electronicCommerceIndicator: Swift.String?
+  @objc final public let transactionId: Swift.String?
+  @objc final public let version: Swift.String?
+  final public let failureCode: FinixPaymentSheet.ThreeDSFailureCode?
+  @objc final public let failureMessage: Swift.String?
+  @objc final public let createdAt: Foundation.Date
+  @objc final public let updatedAt: Foundation.Date
+  @objc final public let authenticationUrl: Swift.String?
+  @objc public var isAuthenticated: Swift.Bool {
+    @objc get
+  }
+  @objc public var liabilityShift: Swift.Bool {
+    @objc get
+  }
+  @objc public var canProceedWithPayment: Swift.Bool {
+    @objc get
+  }
+  @objc public var authenticationTypeString: Swift.String? {
+    @objc get
+  }
+  @objc public var failureCodeString: Swift.String? {
+    @objc get
+  }
+  @objc public var userFriendlyFailureMessage: Swift.String {
+    @objc get
+  }
+  @objc public func displayFailureMessage() -> Swift.String
+  @objc public var isRetryable: Swift.Bool {
+    @objc get
+  }
+  @objc public var isTerminal: Swift.Bool {
+    @objc get
+  }
+  @objc public var needsChallenge: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@objc(ThreeDSErrorCode) public enum ThreeDSErrorCode : Swift.Int {
+  case sessionCreationFailed = 0
+  case challengeLoadFailed = 1
+  case authenticationFailed = 2
+  case timeout = 3
+  case cancelled = 4
+  case invalidRedirect = 5
+  case networkError = 6
+  case serverError = 7
+  case resultRetrievalFailed = 8
+  case configurationMissing = 9
+  case invalidConfiguration = 10
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(ThreeDSError) public class ThreeDSError : ObjectiveC.NSObject, Foundation.LocalizedError {
+  @objc final public let code: FinixPaymentSheet.ThreeDSErrorCode
+  @objc final public let message: Swift.String
+  final public let underlyingError: (any Swift.Error)?
+  @objc final public let statusCode: Swift.Int
+  public init(code: FinixPaymentSheet.ThreeDSErrorCode, message: Swift.String, underlyingError: (any Swift.Error)? = nil, statusCode: Swift.Int = 0)
+  public var errorDescription: Swift.String? {
+    get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
 }
 extension FinixPaymentSheet.BankAccountType : Swift.Equatable {}
 extension FinixPaymentSheet.BankAccountType : Swift.Hashable {}
@@ -502,3 +728,18 @@ extension FinixPaymentSheet.PaymentInputController.PostalCodeFormat : Swift.Hash
 extension FinixPaymentSheet.PaymentInputController.PostalCodeFormat : Swift.RawRepresentable {}
 @available(iOS 13.0, *)
 extension FinixPaymentSheet.PaymentSheetModifier : Swift.Sendable {}
+extension FinixPaymentSheet.ThreeDSStatus : Swift.Equatable {}
+extension FinixPaymentSheet.ThreeDSStatus : Swift.Hashable {}
+extension FinixPaymentSheet.ThreeDSStatus : Swift.RawRepresentable {}
+extension FinixPaymentSheet.ThreeDSAuthenticationType : Swift.Equatable {}
+extension FinixPaymentSheet.ThreeDSAuthenticationType : Swift.Hashable {}
+extension FinixPaymentSheet.ThreeDSAuthenticationType : Swift.RawRepresentable {}
+extension FinixPaymentSheet.ThreeDSECI : Swift.Equatable {}
+extension FinixPaymentSheet.ThreeDSECI : Swift.Hashable {}
+extension FinixPaymentSheet.ThreeDSECI : Swift.RawRepresentable {}
+extension FinixPaymentSheet.ThreeDSFailureCode : Swift.Equatable {}
+extension FinixPaymentSheet.ThreeDSFailureCode : Swift.Hashable {}
+extension FinixPaymentSheet.ThreeDSFailureCode : Swift.RawRepresentable {}
+extension FinixPaymentSheet.ThreeDSErrorCode : Swift.Equatable {}
+extension FinixPaymentSheet.ThreeDSErrorCode : Swift.Hashable {}
+extension FinixPaymentSheet.ThreeDSErrorCode : Swift.RawRepresentable {}

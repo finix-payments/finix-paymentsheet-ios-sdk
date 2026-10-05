@@ -398,6 +398,7 @@ typedef SWIFT_ENUM(NSInteger, ISOCurrency, open) {
 @protocol PaymentActionDelegate;
 @class Configuration;
 @class Localization;
+@class NSURL;
 SWIFT_ENUM_FWD_DECL(NSInteger, PaymentInputControllerStyle)
 @class PaymentInputController;
 @class UIViewController;
@@ -409,6 +410,23 @@ SWIFT_CLASS("_TtC17FinixPaymentSheet13PaymentAction")
 @property (nonatomic, strong) Configuration * _Nonnull configuration;
 @property (nonatomic, strong) Localization * _Nonnull localization;
 @property (nonatomic, weak) id <PaymentActionDelegate> _Nullable delegate;
+/// Handle a 3DS redirect URL from deep link
+/// Call this from your AppDelegate or SceneDelegate when receiving a URL with your custom scheme
+/// Example usage in AppDelegate:
+/// \code
+/// func application(_ app: UIApplication, open url: URL, options: [...]) -> Bool {
+///     if PaymentAction.handleThreeDSRedirect(url: url) {
+///         return true
+///     }
+///     return false
+/// }
+///
+/// \endcode\param url The redirect URL received from the deep link
+///
+///
+/// returns:
+/// true if the URL was handled as a 3DS redirect, false otherwise
++ (BOOL)handleThreeDSRedirectWithUrl:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 /// Objective-C compatible wrapper for creating a payment sheet
 - (PaymentInputController * _Nonnull)paymentSheetWithStyle:(enum PaymentInputControllerStyle)style showCancelButton:(BOOL)showCancelButton showCancelItem:(BOOL)showCancelItem SWIFT_WARN_UNUSED_RESULT;
 /// Objective-C compatible wrapper for creating a bank payment sheet
@@ -419,16 +437,65 @@ SWIFT_CLASS("_TtC17FinixPaymentSheet13PaymentAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class PaymentSheetResponse;
 @class TokenResponse;
+/// Delegate protocol to handle payment sheet results
+/// <h2>3DS Support</h2>
+/// When 3DS is enabled:
+/// <ul>
+///   <li>
+///     <code>didSucceed</code>: Called only when both tokenization AND 3DS authentication succeed.
+///   </li>
+///   <li>
+///     <code>didFail</code>: Called when tokenization fails OR 3DS authentication fails.
+///   </li>
+/// </ul>
+/// <h2>Migration Guide</h2>
+/// The <code>didSucceed(paymentController:instrument:)</code> method is deprecated.
+/// Use <code>didSucceed(paymentController:response:)</code> instead:
+/// \code
+/// // Old (deprecated)
+/// func didSucceed(paymentController: PaymentInputController, instrument: TokenizedResponse) {
+///     let tokenId = instrument.id
+/// }
+///
+/// // New (recommended)
+/// func didSucceed(paymentController: PaymentInputController, response: PaymentSheetResponse) {
+///     let tokenId = response.tokenizedResponse.id
+///     if let threeDSResponse = response.threeDSResponse {
+///         print("3DS session: \(threeDSResponse.sessionId)")
+///     }
+/// }
+///
+/// \endcodeNote: Added @objc for Objective-C compatibility
 SWIFT_PROTOCOL("_TtP17FinixPaymentSheet21PaymentActionDelegate_")
 @protocol PaymentActionDelegate
-- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController instrument:(TokenResponse * _Nonnull)instrument;
+@optional
+/// Called when tokenization succeeds (and 3DS succeeds, if enabled)
+/// When 3DS is enabled, check <code>response.threeDSResponse</code> for authentication details.
+/// Access the token via <code>response.tokenizedResponse</code>.
+/// \param paymentController The payment controller that completed
+///
+/// \param response The unified response containing token and optional 3DS data
+///
+- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController response:(PaymentSheetResponse * _Nonnull)response;
+/// Called when tokenization succeeds (and 3DS succeeds, if enabled)
+/// warning:
+/// This method is deprecated. Use <code>didSucceed(paymentController:response:)</code> instead.
+/// \param paymentController The payment controller that completed
+///
+/// \param instrument The tokenized response (use <code>response.tokenizedResponse</code> in new API)
+///
+- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController instrument:(TokenResponse * _Nonnull)instrument SWIFT_DEPRECATED_MSG("Use didSucceed(paymentController:response:) instead");
+@required
+/// Called when the user cancels the payment sheet
 - (void)didCancelWithPaymentController:(PaymentInputController * _Nonnull)paymentController;
+/// Called when tokenization fails or 3DS authentication fails
 - (void)didFailWithPaymentController:(PaymentInputController * _Nonnull)paymentController error:(NSError * _Nonnull)error;
 @end
 
 @interface PaymentAction (SWIFT_EXTENSION(FinixPaymentSheet)) <PaymentActionDelegate>
-- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController instrument:(TokenResponse * _Nonnull)instrument;
+- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController response:(PaymentSheetResponse * _Nonnull)response;
 - (void)didCancelWithPaymentController:(PaymentInputController * _Nonnull)paymentController;
 - (void)didFailWithPaymentController:(PaymentInputController * _Nonnull)paymentController error:(NSError * _Nonnull)error;
 @end
@@ -500,11 +567,18 @@ SWIFT_CLASS("_TtCC17FinixPaymentSheet22PaymentInputController8Branding")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class ThreeDSConfiguration;
 SWIFT_ENUM_FWD_DECL(NSInteger, PaymentInputControllerPostalCodeFormat)
 SWIFT_CLASS("_TtCC17FinixPaymentSheet22PaymentInputController13Configuration")
 @interface Configuration : NSObject
+/// Basic init for tokenization without 3DS
 - (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning;
-- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning postalCodeFormat:(enum PaymentInputControllerPostalCodeFormat)postalCodeFormat postalCodeRequired:(BOOL)postalCodeRequired OBJC_DESIGNATED_INITIALIZER;
+/// Convenience init with 3DS configuration. Requires credentials, amount and currency.
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning threeDSConfiguration:(ThreeDSConfiguration * _Nullable)threeDSConfiguration merchantId:(NSString * _Nullable)merchantId apiUsername:(NSString * _Nullable)apiUsername apiPassword:(NSString * _Nullable)apiPassword amount:(NSInteger)amount currency:(NSString * _Nonnull)currency;
+/// Convenience init with postal code options (no 3DS)
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning postalCodeFormat:(enum PaymentInputControllerPostalCodeFormat)postalCodeFormat postalCodeRequired:(BOOL)postalCodeRequired;
+/// Full initializer with all options
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning postalCodeFormat:(enum PaymentInputControllerPostalCodeFormat)postalCodeFormat postalCodeRequired:(BOOL)postalCodeRequired threeDSConfiguration:(ThreeDSConfiguration * _Nullable)threeDSConfiguration merchantId:(NSString * _Nullable)merchantId apiUsername:(NSString * _Nullable)apiUsername apiPassword:(NSString * _Nullable)apiPassword amount:(NSInteger)amount currency:(NSString * _Nonnull)currency OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nullable title;
 @property (nonatomic, readonly, strong) Branding * _Nonnull branding;
 @property (nonatomic, readonly, copy) NSString * _Nonnull buttonTitle;
@@ -514,6 +588,19 @@ SWIFT_CLASS("_TtCC17FinixPaymentSheet22PaymentInputController13Configuration")
 @property (nonatomic, readonly) enum PaymentInputControllerPostalCodeFormat postalCodeFormat;
 /// Whether the buyer must fill the postal code before the sheet submits.
 @property (nonatomic, readonly) BOOL postalCodeRequired;
+/// Configuration for 3DS authentication. Set to nil to disable 3DS.
+/// Presence of this object enables 3DS.
+@property (nonatomic, readonly, strong) ThreeDSConfiguration * _Nullable threeDSConfiguration;
+/// Merchant ID (e.g., “MUxxxxxxxx”). Required for 3DS.
+@property (nonatomic, readonly, copy) NSString * _Nullable merchantId;
+/// API username for HTTP Basic Auth (e.g., “USxxxxxxxx”). Required for 3DS.
+@property (nonatomic, readonly, copy) NSString * _Nullable apiUsername;
+/// API password for HTTP Basic Auth. Required for 3DS.
+@property (nonatomic, readonly, copy) NSString * _Nullable apiPassword;
+/// Payment amount in cents (e.g., 9900 for $99.00)
+@property (nonatomic, readonly) NSInteger amount;
+/// Currency code (e.g., “USD”)
+@property (nonatomic, readonly, copy) NSString * _Nonnull currency;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=default) Configuration * _Nonnull default_;)
 + (Configuration * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -650,7 +737,283 @@ typedef SWIFT_ENUM(NSInteger, PaymentInstrumentType, open) {
   PaymentInstrumentTypeBank = 1,
 };
 
+@class ThreeDSResponse;
+/// Unified response object for payment sheet operations
+/// Contains tokenization response and optional 3DS response
+SWIFT_CLASS_NAMED("PaymentSheetResponse")
+@interface PaymentSheetResponse : NSObject
+/// The tokenized card/bank response
+@property (nonatomic, readonly, strong) TokenResponse * _Nonnull tokenizedResponse;
+/// 3DS authentication response (nil if 3DS was not used or failed)
+@property (nonatomic, strong) ThreeDSResponse * _Nullable threeDSResponse;
+/// Initialize with tokenized response only (no 3DS)
+- (nonnull instancetype)initWithTokenizedResponse:(TokenResponse * _Nonnull)tokenizedResponse OBJC_DESIGNATED_INITIALIZER;
+/// Initialize with both tokenized response and 3DS response
+- (nonnull instancetype)initWithTokenizedResponse:(TokenResponse * _Nonnull)tokenizedResponse threeDSResponse:(ThreeDSResponse * _Nullable)threeDSResponse OBJC_DESIGNATED_INITIALIZER;
+/// Convenience property to check if 3DS was attempted and succeeded
+@property (nonatomic, readonly) BOOL threeDSWasAttempted;
+/// Convenience property to check if 3DS succeeded
+@property (nonatomic, readonly) BOOL threeDSSucceeded;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Indicates how the 3DS authentication was completed
+/// Maps to Evervault’s authentication.flow field
+/// Lenient parsing: unknown types map to .unknown instead of throwing errors
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSAuthenticationType, "ThreeDSAuthenticationType", open) {
+/// Authentication completed silently in the background
+/// The cardholder was not prompted
+  ThreeDSAuthenticationTypeFrictionless = 0,
+/// Authentication required the cardholder to actively verify their identity
+  ThreeDSAuthenticationTypeChallenge = 1,
+/// Authentication was attempted but the issuer or card does not support full 3DS
+  ThreeDSAuthenticationTypeAttempt = 2,
+/// Unknown authentication type - used for forward compatibility
+  ThreeDSAuthenticationTypeUnknown = 99,
+};
+
+/// Configuration for 3DS authentication
+/// Contains the redirect scheme for handling 3DS callbacks.
+/// Credentials (merchantId, apiUsername, apiPassword) are in the parent Configuration.
+/// Presence of this object enables 3DS. Set to nil or isEnabled=false to disable.
+SWIFT_CLASS_NAMED("ThreeDSConfiguration")
+@interface ThreeDSConfiguration : NSObject
+/// Custom URL scheme for redirect handling (must match Info.plist)
+/// Use your app’s bundle identifier for uniqueness (e.g., “com.yourcompany.yourapp”)
+@property (nonatomic, readonly, copy) NSString * _Nonnull redirectScheme;
+/// Runtime toggle to enable/disable 3DS without removing the configuration
+/// Default is true. Set to false to disable 3DS while keeping the configuration.
+@property (nonatomic, readonly) BOOL isEnabled;
+/// Primary initializer
+- (nonnull instancetype)initWithRedirectScheme:(NSString * _Nonnull)redirectScheme isEnabled:(BOOL)isEnabled OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Electronic Commerce Indicator values for 3DS
+/// Indicates the authentication outcome and determines liability shift
+/// <em>Important</em>: Numeric ECI values are network-specific and CANNOT be reliably
+/// interpreted without knowing the card network:
+/// <ul>
+///   <li>
+///     Visa/Amex/Discover: 05 (authenticated), 06 (attempted), 07 (not authenticated)
+///   </li>
+///   <li>
+///     Mastercard: 02 (authenticated), 01 (attempted), 00/04/06 (not authenticated)
+///   </li>
+///   <li>
+///     Mastercard 07 = authenticated (conflicts with Visa 07 = not authenticated)
+///   </li>
+/// </ul>
+/// This enum maps textual labels (AUTHENTICATED, ATTEMPTED) unambiguously.
+/// For numeric values, only unambiguous mappings are performed; ambiguous values
+/// (like 06, 07) map to .unknown for safety.
+/// Lenient parsing: unknown ECI values map to .unknown instead of throwing errors
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSECI, "ThreeDSECI", open) {
+/// Fully authenticated - Visa/Amex/Discover: 05, Mastercard: 02
+/// Liability shifts to the issuer
+  ThreeDSECIAuthenticated = 0,
+/// Attempted - Mastercard: 01
+/// Authentication attempted but issuer/card doesn’t support full 3DS
+/// Reduced liability shift applies
+/// Note: Visa 06 is excluded because Mastercard 06 = not authenticated
+  ThreeDSECIAttempted = 1,
+/// Not authenticated - Mastercard: 00/04
+/// Liability does not shift
+/// Note: Visa 07 excluded because Mastercard 07 = authenticated
+  ThreeDSECINonAuthenticated = 2,
+/// Unknown or ambiguous ECI value - used for forward compatibility
+/// Treat as no liability shift for safety
+/// Includes network-ambiguous values: 06 (Visa attempted vs MC not auth),
+/// 07 (Visa not auth vs MC authenticated)
+  ThreeDSECIUnknown = 99,
+};
+
+SWIFT_ENUM_FWD_DECL(NSInteger, ThreeDSErrorCode)
+/// Error type for 3DS authentication failures
+SWIFT_CLASS_NAMED("ThreeDSError")
+@interface ThreeDSError : NSObject
+@property (nonatomic, readonly) enum ThreeDSErrorCode code;
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+@property (nonatomic, readonly) NSInteger statusCode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Error codes for 3DS authentication
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSErrorCode, "ThreeDSErrorCode", open) {
+/// Failed to create 3DS session
+  ThreeDSErrorCodeSessionCreationFailed = 0,
+/// Failed to load challenge page
+  ThreeDSErrorCodeChallengeLoadFailed = 1,
+/// Authentication failed
+  ThreeDSErrorCodeAuthenticationFailed = 2,
+/// Challenge timed out
+  ThreeDSErrorCodeTimeout = 3,
+/// User cancelled
+  ThreeDSErrorCodeCancelled = 4,
+/// Invalid redirect URL
+  ThreeDSErrorCodeInvalidRedirect = 5,
+/// Network error
+  ThreeDSErrorCodeNetworkError = 6,
+/// Server error
+  ThreeDSErrorCodeServerError = 7,
+/// Failed to retrieve result
+  ThreeDSErrorCodeResultRetrievalFailed = 8,
+/// 3DS configuration is missing
+  ThreeDSErrorCodeConfigurationMissing = 9,
+/// Invalid configuration
+  ThreeDSErrorCodeInvalidConfiguration = 10,
+};
+
+/// Failure codes for 3DS authentication
+/// Maps to Evervault’s failureReason field
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSFailureCode, "ThreeDSFailureCode", open) {
+/// The card issuer’s authentication server was unavailable
+  ThreeDSFailureCodeAccessControlServerUnavailable = 0,
+/// The cardholder failed to provide correct authentication details
+/// This transaction should be considered potentially fraudulent
+  ThreeDSFailureCodeAuthenticationFailed = 1,
+/// The authentication timed out, likely because cardholder abandoned
+  ThreeDSFailureCodeAuthenticationTimedOut = 2,
+/// The card is not enrolled in 3DS and cannot be authenticated
+  ThreeDSFailureCodeCardNotEnrolled = 3,
+/// A challenge was required but integration is configured to fail on challenge
+  ThreeDSFailureCodeChallengeRequired = 4,
+/// The card network’s directory server was unavailable
+  ThreeDSFailureCodeDirectoryServerUnavailable = 5,
+/// The acquirer details provided are invalid
+  ThreeDSFailureCodeInvalidAcquirer = 6,
+/// The card details are invalid
+  ThreeDSFailureCodeInvalidCard = 7,
+/// A protocol error occurred during authentication
+  ThreeDSFailureCodeProtocolError = 8,
+/// A required data element is missing from the request
+  ThreeDSFailureCodeRequiredDataElementMissing = 9,
+/// The transaction was flagged as suspected fraud by the issuer
+  ThreeDSFailureCodeSuspectedFraud = 10,
+/// The cardholder explicitly cancelled the authentication challenge
+  ThreeDSFailureCodeTransactionCancelledByCardholder = 11,
+/// The transaction type is not permitted for this card
+  ThreeDSFailureCodeTransactionNotPermitted = 12,
+/// A transient system failure occurred
+  ThreeDSFailureCodeTransientSystemFailure = 13,
+/// The 3D Secure version required by the issuer is not supported
+  ThreeDSFailureCodeUnsupported3DSecureVersion = 14,
+/// Unknown failure code
+  ThreeDSFailureCodeUnknown = 99,
+};
+
+SWIFT_ENUM_FWD_DECL(NSInteger, ThreeDSStatus)
 @class NSDate;
+/// Response from a 3DS authentication session
+/// Contains all information needed for authorization/transfer with 3DS
+SWIFT_CLASS_NAMED("ThreeDSResponse")
+@interface ThreeDSResponse : NSObject
+/// The 3DS session ID (e.g., “3d_secure_session_abc1234567890”)
+@property (nonatomic, readonly, copy) NSString * _Nonnull sessionId;
+/// The source identifier (token ID or payment instrument ID)
+@property (nonatomic, readonly, copy) NSString * _Nonnull sourceId;
+/// Authentication state: PENDING, SUCCEEDED, FAILED
+@property (nonatomic, readonly) enum ThreeDSStatus state;
+/// The CAVV (Cardholder Authentication Verification Value) / cryptogram
+/// Only present when authentication succeeds with AUTHENTICATED or ATTEMPTED ECI
+@property (nonatomic, readonly, copy) NSString * _Nullable cardholderAuthentication;
+/// Electronic Commerce Indicator - indicates authentication outcome
+/// AUTHENTICATED, ATTEMPTED, or NON_AUTHENTICATED
+@property (nonatomic, readonly, copy) NSString * _Nullable electronicCommerceIndicator;
+/// The directory server transaction ID
+/// Only present when authentication succeeds
+@property (nonatomic, readonly, copy) NSString * _Nullable transactionId;
+/// 3DS version used (e.g., “2.2.0”)
+@property (nonatomic, readonly, copy) NSString * _Nullable version;
+/// Description of the failure
+@property (nonatomic, readonly, copy) NSString * _Nullable failureMessage;
+/// When the session was created
+@property (nonatomic, readonly, copy) NSDate * _Nonnull createdAt;
+/// When the session was last updated
+@property (nonatomic, readonly, copy) NSDate * _Nonnull updatedAt;
+/// URL to redirect the cardholder to complete 3DS challenge authentication
+/// Only present when state is PENDING and a challenge is required
+@property (nonatomic, readonly, copy) NSString * _Nullable authenticationUrl;
+/// Whether authentication was successful
+@property (nonatomic, readonly) BOOL isAuthenticated;
+/// Whether liability shifts to the issuer
+/// True when ECI is AUTHENTICATED or ATTEMPTED (textual or numeric)
+/// Note: Numeric ECI values are network-specific. Without card network context,
+/// only values that indicate liability shift for ALL networks are included:
+/// <ul>
+///   <li>
+///     05: Authenticated (Visa/Amex/Discover)
+///   </li>
+///   <li>
+///     02: Authenticated (Mastercard)
+///   </li>
+///   <li>
+///     01: Attempted (Mastercard)
+///   </li>
+/// </ul>
+/// Excluded due to network ambiguity:
+/// <ul>
+///   <li>
+///     06: Attempted for Visa/Amex/Discover, but NOT authenticated for Mastercard
+///   </li>
+///   <li>
+///     07: NOT authenticated for Visa/Amex/Discover, but authenticated for Mastercard
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) BOOL liabilityShift;
+/// Whether the result can be used for a payment
+/// True if authentication succeeded (check ECI for liability shift)
+@property (nonatomic, readonly) BOOL canProceedWithPayment;
+/// Authentication type as a string for Objective-C compatibility
+@property (nonatomic, readonly, copy) NSString * _Nullable authenticationTypeString;
+/// Failure code as a string for Objective-C compatibility
+@property (nonatomic, readonly, copy) NSString * _Nullable failureCodeString;
+/// User-friendly failure message
+@property (nonatomic, readonly, copy) NSString * _Nonnull userFriendlyFailureMessage;
+/// Display failure message for UI
+/// Returns a user-friendly message suitable for display
+- (NSString * _Nonnull)displayFailureMessage SWIFT_WARN_UNUSED_RESULT;
+/// Whether the failure is retryable
+@property (nonatomic, readonly) BOOL isRetryable;
+/// Whether the session has reached a terminal state (succeeded or failed)
+/// Terminal states won’t change with further polling
+@property (nonatomic, readonly) BOOL isTerminal;
+/// Whether this result indicates the session needs a challenge
+/// True only if state is pending AND there’s an authentication URL available
+/// A pending state without an authentication URL indicates an incomplete session
+@property (nonatomic, readonly) BOOL needsChallenge;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) NSUInteger hash;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Status of a 3DS authentication session
+/// Maps to Finix API state values: PENDING, SUCCEEDED, FAILED
+/// Lenient parsing: unknown states map to .unknown instead of throwing errors
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSStatus, "ThreeDSStatus", open) {
+/// Session created, waiting for cardholder to complete authentication
+/// Evervault equivalent: action-required
+  ThreeDSStatusPending = 0,
+/// Authentication completed successfully
+/// Evervault equivalent: success, attempted
+/// Check electronic_commerce_indicator to determine the outcome
+  ThreeDSStatusSucceeded = 1,
+/// Authentication failed
+/// Evervault equivalent: failure
+/// Check failure_code for details
+  ThreeDSStatusFailed = 2,
+/// Unknown state - used for forward compatibility
+/// New server states won’t break the app
+  ThreeDSStatusUnknown = 99,
+};
+
 /// {
 /// “id” : “TKcHHcB9e1GrG3rifyfLEtoM”,
 /// “fingerprint” : “FPRrcobjtdU98gr4sjiqYR1Qg”,
@@ -660,7 +1023,7 @@ typedef SWIFT_ENUM(NSInteger, PaymentInstrumentType, open) {
 /// “expires_at” : “2022-07-04T00:03:24.48Z”,
 /// “currency” : “USD”
 /// }
-SWIFT_CLASS("_TtC17FinixPaymentSheet13TokenResponse")
+SWIFT_CLASS_NAMED("TokenizedResponse")
 @interface TokenResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
 @property (nonatomic, readonly, copy) NSString * _Nonnull fingerprint;
@@ -1081,6 +1444,7 @@ typedef SWIFT_ENUM(NSInteger, ISOCurrency, open) {
 @protocol PaymentActionDelegate;
 @class Configuration;
 @class Localization;
+@class NSURL;
 SWIFT_ENUM_FWD_DECL(NSInteger, PaymentInputControllerStyle)
 @class PaymentInputController;
 @class UIViewController;
@@ -1092,6 +1456,23 @@ SWIFT_CLASS("_TtC17FinixPaymentSheet13PaymentAction")
 @property (nonatomic, strong) Configuration * _Nonnull configuration;
 @property (nonatomic, strong) Localization * _Nonnull localization;
 @property (nonatomic, weak) id <PaymentActionDelegate> _Nullable delegate;
+/// Handle a 3DS redirect URL from deep link
+/// Call this from your AppDelegate or SceneDelegate when receiving a URL with your custom scheme
+/// Example usage in AppDelegate:
+/// \code
+/// func application(_ app: UIApplication, open url: URL, options: [...]) -> Bool {
+///     if PaymentAction.handleThreeDSRedirect(url: url) {
+///         return true
+///     }
+///     return false
+/// }
+///
+/// \endcode\param url The redirect URL received from the deep link
+///
+///
+/// returns:
+/// true if the URL was handled as a 3DS redirect, false otherwise
++ (BOOL)handleThreeDSRedirectWithUrl:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 /// Objective-C compatible wrapper for creating a payment sheet
 - (PaymentInputController * _Nonnull)paymentSheetWithStyle:(enum PaymentInputControllerStyle)style showCancelButton:(BOOL)showCancelButton showCancelItem:(BOOL)showCancelItem SWIFT_WARN_UNUSED_RESULT;
 /// Objective-C compatible wrapper for creating a bank payment sheet
@@ -1102,16 +1483,65 @@ SWIFT_CLASS("_TtC17FinixPaymentSheet13PaymentAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class PaymentSheetResponse;
 @class TokenResponse;
+/// Delegate protocol to handle payment sheet results
+/// <h2>3DS Support</h2>
+/// When 3DS is enabled:
+/// <ul>
+///   <li>
+///     <code>didSucceed</code>: Called only when both tokenization AND 3DS authentication succeed.
+///   </li>
+///   <li>
+///     <code>didFail</code>: Called when tokenization fails OR 3DS authentication fails.
+///   </li>
+/// </ul>
+/// <h2>Migration Guide</h2>
+/// The <code>didSucceed(paymentController:instrument:)</code> method is deprecated.
+/// Use <code>didSucceed(paymentController:response:)</code> instead:
+/// \code
+/// // Old (deprecated)
+/// func didSucceed(paymentController: PaymentInputController, instrument: TokenizedResponse) {
+///     let tokenId = instrument.id
+/// }
+///
+/// // New (recommended)
+/// func didSucceed(paymentController: PaymentInputController, response: PaymentSheetResponse) {
+///     let tokenId = response.tokenizedResponse.id
+///     if let threeDSResponse = response.threeDSResponse {
+///         print("3DS session: \(threeDSResponse.sessionId)")
+///     }
+/// }
+///
+/// \endcodeNote: Added @objc for Objective-C compatibility
 SWIFT_PROTOCOL("_TtP17FinixPaymentSheet21PaymentActionDelegate_")
 @protocol PaymentActionDelegate
-- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController instrument:(TokenResponse * _Nonnull)instrument;
+@optional
+/// Called when tokenization succeeds (and 3DS succeeds, if enabled)
+/// When 3DS is enabled, check <code>response.threeDSResponse</code> for authentication details.
+/// Access the token via <code>response.tokenizedResponse</code>.
+/// \param paymentController The payment controller that completed
+///
+/// \param response The unified response containing token and optional 3DS data
+///
+- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController response:(PaymentSheetResponse * _Nonnull)response;
+/// Called when tokenization succeeds (and 3DS succeeds, if enabled)
+/// warning:
+/// This method is deprecated. Use <code>didSucceed(paymentController:response:)</code> instead.
+/// \param paymentController The payment controller that completed
+///
+/// \param instrument The tokenized response (use <code>response.tokenizedResponse</code> in new API)
+///
+- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController instrument:(TokenResponse * _Nonnull)instrument SWIFT_DEPRECATED_MSG("Use didSucceed(paymentController:response:) instead");
+@required
+/// Called when the user cancels the payment sheet
 - (void)didCancelWithPaymentController:(PaymentInputController * _Nonnull)paymentController;
+/// Called when tokenization fails or 3DS authentication fails
 - (void)didFailWithPaymentController:(PaymentInputController * _Nonnull)paymentController error:(NSError * _Nonnull)error;
 @end
 
 @interface PaymentAction (SWIFT_EXTENSION(FinixPaymentSheet)) <PaymentActionDelegate>
-- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController instrument:(TokenResponse * _Nonnull)instrument;
+- (void)didSucceedWithPaymentController:(PaymentInputController * _Nonnull)paymentController response:(PaymentSheetResponse * _Nonnull)response;
 - (void)didCancelWithPaymentController:(PaymentInputController * _Nonnull)paymentController;
 - (void)didFailWithPaymentController:(PaymentInputController * _Nonnull)paymentController error:(NSError * _Nonnull)error;
 @end
@@ -1183,11 +1613,18 @@ SWIFT_CLASS("_TtCC17FinixPaymentSheet22PaymentInputController8Branding")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class ThreeDSConfiguration;
 SWIFT_ENUM_FWD_DECL(NSInteger, PaymentInputControllerPostalCodeFormat)
 SWIFT_CLASS("_TtCC17FinixPaymentSheet22PaymentInputController13Configuration")
 @interface Configuration : NSObject
+/// Basic init for tokenization without 3DS
 - (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning;
-- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning postalCodeFormat:(enum PaymentInputControllerPostalCodeFormat)postalCodeFormat postalCodeRequired:(BOOL)postalCodeRequired OBJC_DESIGNATED_INITIALIZER;
+/// Convenience init with 3DS configuration. Requires credentials, amount and currency.
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning threeDSConfiguration:(ThreeDSConfiguration * _Nullable)threeDSConfiguration merchantId:(NSString * _Nullable)merchantId apiUsername:(NSString * _Nullable)apiUsername apiPassword:(NSString * _Nullable)apiPassword amount:(NSInteger)amount currency:(NSString * _Nonnull)currency;
+/// Convenience init with postal code options (no 3DS)
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning postalCodeFormat:(enum PaymentInputControllerPostalCodeFormat)postalCodeFormat postalCodeRequired:(BOOL)postalCodeRequired;
+/// Full initializer with all options
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title branding:(Branding * _Nonnull)branding buttonTitle:(NSString * _Nonnull)buttonTitle enableCardScanning:(BOOL)enableCardScanning postalCodeFormat:(enum PaymentInputControllerPostalCodeFormat)postalCodeFormat postalCodeRequired:(BOOL)postalCodeRequired threeDSConfiguration:(ThreeDSConfiguration * _Nullable)threeDSConfiguration merchantId:(NSString * _Nullable)merchantId apiUsername:(NSString * _Nullable)apiUsername apiPassword:(NSString * _Nullable)apiPassword amount:(NSInteger)amount currency:(NSString * _Nonnull)currency OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nullable title;
 @property (nonatomic, readonly, strong) Branding * _Nonnull branding;
 @property (nonatomic, readonly, copy) NSString * _Nonnull buttonTitle;
@@ -1197,6 +1634,19 @@ SWIFT_CLASS("_TtCC17FinixPaymentSheet22PaymentInputController13Configuration")
 @property (nonatomic, readonly) enum PaymentInputControllerPostalCodeFormat postalCodeFormat;
 /// Whether the buyer must fill the postal code before the sheet submits.
 @property (nonatomic, readonly) BOOL postalCodeRequired;
+/// Configuration for 3DS authentication. Set to nil to disable 3DS.
+/// Presence of this object enables 3DS.
+@property (nonatomic, readonly, strong) ThreeDSConfiguration * _Nullable threeDSConfiguration;
+/// Merchant ID (e.g., “MUxxxxxxxx”). Required for 3DS.
+@property (nonatomic, readonly, copy) NSString * _Nullable merchantId;
+/// API username for HTTP Basic Auth (e.g., “USxxxxxxxx”). Required for 3DS.
+@property (nonatomic, readonly, copy) NSString * _Nullable apiUsername;
+/// API password for HTTP Basic Auth. Required for 3DS.
+@property (nonatomic, readonly, copy) NSString * _Nullable apiPassword;
+/// Payment amount in cents (e.g., 9900 for $99.00)
+@property (nonatomic, readonly) NSInteger amount;
+/// Currency code (e.g., “USD”)
+@property (nonatomic, readonly, copy) NSString * _Nonnull currency;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=default) Configuration * _Nonnull default_;)
 + (Configuration * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1333,7 +1783,283 @@ typedef SWIFT_ENUM(NSInteger, PaymentInstrumentType, open) {
   PaymentInstrumentTypeBank = 1,
 };
 
+@class ThreeDSResponse;
+/// Unified response object for payment sheet operations
+/// Contains tokenization response and optional 3DS response
+SWIFT_CLASS_NAMED("PaymentSheetResponse")
+@interface PaymentSheetResponse : NSObject
+/// The tokenized card/bank response
+@property (nonatomic, readonly, strong) TokenResponse * _Nonnull tokenizedResponse;
+/// 3DS authentication response (nil if 3DS was not used or failed)
+@property (nonatomic, strong) ThreeDSResponse * _Nullable threeDSResponse;
+/// Initialize with tokenized response only (no 3DS)
+- (nonnull instancetype)initWithTokenizedResponse:(TokenResponse * _Nonnull)tokenizedResponse OBJC_DESIGNATED_INITIALIZER;
+/// Initialize with both tokenized response and 3DS response
+- (nonnull instancetype)initWithTokenizedResponse:(TokenResponse * _Nonnull)tokenizedResponse threeDSResponse:(ThreeDSResponse * _Nullable)threeDSResponse OBJC_DESIGNATED_INITIALIZER;
+/// Convenience property to check if 3DS was attempted and succeeded
+@property (nonatomic, readonly) BOOL threeDSWasAttempted;
+/// Convenience property to check if 3DS succeeded
+@property (nonatomic, readonly) BOOL threeDSSucceeded;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Indicates how the 3DS authentication was completed
+/// Maps to Evervault’s authentication.flow field
+/// Lenient parsing: unknown types map to .unknown instead of throwing errors
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSAuthenticationType, "ThreeDSAuthenticationType", open) {
+/// Authentication completed silently in the background
+/// The cardholder was not prompted
+  ThreeDSAuthenticationTypeFrictionless = 0,
+/// Authentication required the cardholder to actively verify their identity
+  ThreeDSAuthenticationTypeChallenge = 1,
+/// Authentication was attempted but the issuer or card does not support full 3DS
+  ThreeDSAuthenticationTypeAttempt = 2,
+/// Unknown authentication type - used for forward compatibility
+  ThreeDSAuthenticationTypeUnknown = 99,
+};
+
+/// Configuration for 3DS authentication
+/// Contains the redirect scheme for handling 3DS callbacks.
+/// Credentials (merchantId, apiUsername, apiPassword) are in the parent Configuration.
+/// Presence of this object enables 3DS. Set to nil or isEnabled=false to disable.
+SWIFT_CLASS_NAMED("ThreeDSConfiguration")
+@interface ThreeDSConfiguration : NSObject
+/// Custom URL scheme for redirect handling (must match Info.plist)
+/// Use your app’s bundle identifier for uniqueness (e.g., “com.yourcompany.yourapp”)
+@property (nonatomic, readonly, copy) NSString * _Nonnull redirectScheme;
+/// Runtime toggle to enable/disable 3DS without removing the configuration
+/// Default is true. Set to false to disable 3DS while keeping the configuration.
+@property (nonatomic, readonly) BOOL isEnabled;
+/// Primary initializer
+- (nonnull instancetype)initWithRedirectScheme:(NSString * _Nonnull)redirectScheme isEnabled:(BOOL)isEnabled OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Electronic Commerce Indicator values for 3DS
+/// Indicates the authentication outcome and determines liability shift
+/// <em>Important</em>: Numeric ECI values are network-specific and CANNOT be reliably
+/// interpreted without knowing the card network:
+/// <ul>
+///   <li>
+///     Visa/Amex/Discover: 05 (authenticated), 06 (attempted), 07 (not authenticated)
+///   </li>
+///   <li>
+///     Mastercard: 02 (authenticated), 01 (attempted), 00/04/06 (not authenticated)
+///   </li>
+///   <li>
+///     Mastercard 07 = authenticated (conflicts with Visa 07 = not authenticated)
+///   </li>
+/// </ul>
+/// This enum maps textual labels (AUTHENTICATED, ATTEMPTED) unambiguously.
+/// For numeric values, only unambiguous mappings are performed; ambiguous values
+/// (like 06, 07) map to .unknown for safety.
+/// Lenient parsing: unknown ECI values map to .unknown instead of throwing errors
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSECI, "ThreeDSECI", open) {
+/// Fully authenticated - Visa/Amex/Discover: 05, Mastercard: 02
+/// Liability shifts to the issuer
+  ThreeDSECIAuthenticated = 0,
+/// Attempted - Mastercard: 01
+/// Authentication attempted but issuer/card doesn’t support full 3DS
+/// Reduced liability shift applies
+/// Note: Visa 06 is excluded because Mastercard 06 = not authenticated
+  ThreeDSECIAttempted = 1,
+/// Not authenticated - Mastercard: 00/04
+/// Liability does not shift
+/// Note: Visa 07 excluded because Mastercard 07 = authenticated
+  ThreeDSECINonAuthenticated = 2,
+/// Unknown or ambiguous ECI value - used for forward compatibility
+/// Treat as no liability shift for safety
+/// Includes network-ambiguous values: 06 (Visa attempted vs MC not auth),
+/// 07 (Visa not auth vs MC authenticated)
+  ThreeDSECIUnknown = 99,
+};
+
+SWIFT_ENUM_FWD_DECL(NSInteger, ThreeDSErrorCode)
+/// Error type for 3DS authentication failures
+SWIFT_CLASS_NAMED("ThreeDSError")
+@interface ThreeDSError : NSObject
+@property (nonatomic, readonly) enum ThreeDSErrorCode code;
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+@property (nonatomic, readonly) NSInteger statusCode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Error codes for 3DS authentication
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSErrorCode, "ThreeDSErrorCode", open) {
+/// Failed to create 3DS session
+  ThreeDSErrorCodeSessionCreationFailed = 0,
+/// Failed to load challenge page
+  ThreeDSErrorCodeChallengeLoadFailed = 1,
+/// Authentication failed
+  ThreeDSErrorCodeAuthenticationFailed = 2,
+/// Challenge timed out
+  ThreeDSErrorCodeTimeout = 3,
+/// User cancelled
+  ThreeDSErrorCodeCancelled = 4,
+/// Invalid redirect URL
+  ThreeDSErrorCodeInvalidRedirect = 5,
+/// Network error
+  ThreeDSErrorCodeNetworkError = 6,
+/// Server error
+  ThreeDSErrorCodeServerError = 7,
+/// Failed to retrieve result
+  ThreeDSErrorCodeResultRetrievalFailed = 8,
+/// 3DS configuration is missing
+  ThreeDSErrorCodeConfigurationMissing = 9,
+/// Invalid configuration
+  ThreeDSErrorCodeInvalidConfiguration = 10,
+};
+
+/// Failure codes for 3DS authentication
+/// Maps to Evervault’s failureReason field
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSFailureCode, "ThreeDSFailureCode", open) {
+/// The card issuer’s authentication server was unavailable
+  ThreeDSFailureCodeAccessControlServerUnavailable = 0,
+/// The cardholder failed to provide correct authentication details
+/// This transaction should be considered potentially fraudulent
+  ThreeDSFailureCodeAuthenticationFailed = 1,
+/// The authentication timed out, likely because cardholder abandoned
+  ThreeDSFailureCodeAuthenticationTimedOut = 2,
+/// The card is not enrolled in 3DS and cannot be authenticated
+  ThreeDSFailureCodeCardNotEnrolled = 3,
+/// A challenge was required but integration is configured to fail on challenge
+  ThreeDSFailureCodeChallengeRequired = 4,
+/// The card network’s directory server was unavailable
+  ThreeDSFailureCodeDirectoryServerUnavailable = 5,
+/// The acquirer details provided are invalid
+  ThreeDSFailureCodeInvalidAcquirer = 6,
+/// The card details are invalid
+  ThreeDSFailureCodeInvalidCard = 7,
+/// A protocol error occurred during authentication
+  ThreeDSFailureCodeProtocolError = 8,
+/// A required data element is missing from the request
+  ThreeDSFailureCodeRequiredDataElementMissing = 9,
+/// The transaction was flagged as suspected fraud by the issuer
+  ThreeDSFailureCodeSuspectedFraud = 10,
+/// The cardholder explicitly cancelled the authentication challenge
+  ThreeDSFailureCodeTransactionCancelledByCardholder = 11,
+/// The transaction type is not permitted for this card
+  ThreeDSFailureCodeTransactionNotPermitted = 12,
+/// A transient system failure occurred
+  ThreeDSFailureCodeTransientSystemFailure = 13,
+/// The 3D Secure version required by the issuer is not supported
+  ThreeDSFailureCodeUnsupported3DSecureVersion = 14,
+/// Unknown failure code
+  ThreeDSFailureCodeUnknown = 99,
+};
+
+SWIFT_ENUM_FWD_DECL(NSInteger, ThreeDSStatus)
 @class NSDate;
+/// Response from a 3DS authentication session
+/// Contains all information needed for authorization/transfer with 3DS
+SWIFT_CLASS_NAMED("ThreeDSResponse")
+@interface ThreeDSResponse : NSObject
+/// The 3DS session ID (e.g., “3d_secure_session_abc1234567890”)
+@property (nonatomic, readonly, copy) NSString * _Nonnull sessionId;
+/// The source identifier (token ID or payment instrument ID)
+@property (nonatomic, readonly, copy) NSString * _Nonnull sourceId;
+/// Authentication state: PENDING, SUCCEEDED, FAILED
+@property (nonatomic, readonly) enum ThreeDSStatus state;
+/// The CAVV (Cardholder Authentication Verification Value) / cryptogram
+/// Only present when authentication succeeds with AUTHENTICATED or ATTEMPTED ECI
+@property (nonatomic, readonly, copy) NSString * _Nullable cardholderAuthentication;
+/// Electronic Commerce Indicator - indicates authentication outcome
+/// AUTHENTICATED, ATTEMPTED, or NON_AUTHENTICATED
+@property (nonatomic, readonly, copy) NSString * _Nullable electronicCommerceIndicator;
+/// The directory server transaction ID
+/// Only present when authentication succeeds
+@property (nonatomic, readonly, copy) NSString * _Nullable transactionId;
+/// 3DS version used (e.g., “2.2.0”)
+@property (nonatomic, readonly, copy) NSString * _Nullable version;
+/// Description of the failure
+@property (nonatomic, readonly, copy) NSString * _Nullable failureMessage;
+/// When the session was created
+@property (nonatomic, readonly, copy) NSDate * _Nonnull createdAt;
+/// When the session was last updated
+@property (nonatomic, readonly, copy) NSDate * _Nonnull updatedAt;
+/// URL to redirect the cardholder to complete 3DS challenge authentication
+/// Only present when state is PENDING and a challenge is required
+@property (nonatomic, readonly, copy) NSString * _Nullable authenticationUrl;
+/// Whether authentication was successful
+@property (nonatomic, readonly) BOOL isAuthenticated;
+/// Whether liability shifts to the issuer
+/// True when ECI is AUTHENTICATED or ATTEMPTED (textual or numeric)
+/// Note: Numeric ECI values are network-specific. Without card network context,
+/// only values that indicate liability shift for ALL networks are included:
+/// <ul>
+///   <li>
+///     05: Authenticated (Visa/Amex/Discover)
+///   </li>
+///   <li>
+///     02: Authenticated (Mastercard)
+///   </li>
+///   <li>
+///     01: Attempted (Mastercard)
+///   </li>
+/// </ul>
+/// Excluded due to network ambiguity:
+/// <ul>
+///   <li>
+///     06: Attempted for Visa/Amex/Discover, but NOT authenticated for Mastercard
+///   </li>
+///   <li>
+///     07: NOT authenticated for Visa/Amex/Discover, but authenticated for Mastercard
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) BOOL liabilityShift;
+/// Whether the result can be used for a payment
+/// True if authentication succeeded (check ECI for liability shift)
+@property (nonatomic, readonly) BOOL canProceedWithPayment;
+/// Authentication type as a string for Objective-C compatibility
+@property (nonatomic, readonly, copy) NSString * _Nullable authenticationTypeString;
+/// Failure code as a string for Objective-C compatibility
+@property (nonatomic, readonly, copy) NSString * _Nullable failureCodeString;
+/// User-friendly failure message
+@property (nonatomic, readonly, copy) NSString * _Nonnull userFriendlyFailureMessage;
+/// Display failure message for UI
+/// Returns a user-friendly message suitable for display
+- (NSString * _Nonnull)displayFailureMessage SWIFT_WARN_UNUSED_RESULT;
+/// Whether the failure is retryable
+@property (nonatomic, readonly) BOOL isRetryable;
+/// Whether the session has reached a terminal state (succeeded or failed)
+/// Terminal states won’t change with further polling
+@property (nonatomic, readonly) BOOL isTerminal;
+/// Whether this result indicates the session needs a challenge
+/// True only if state is pending AND there’s an authentication URL available
+/// A pending state without an authentication URL indicates an incomplete session
+@property (nonatomic, readonly) BOOL needsChallenge;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) NSUInteger hash;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Status of a 3DS authentication session
+/// Maps to Finix API state values: PENDING, SUCCEEDED, FAILED
+/// Lenient parsing: unknown states map to .unknown instead of throwing errors
+typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSStatus, "ThreeDSStatus", open) {
+/// Session created, waiting for cardholder to complete authentication
+/// Evervault equivalent: action-required
+  ThreeDSStatusPending = 0,
+/// Authentication completed successfully
+/// Evervault equivalent: success, attempted
+/// Check electronic_commerce_indicator to determine the outcome
+  ThreeDSStatusSucceeded = 1,
+/// Authentication failed
+/// Evervault equivalent: failure
+/// Check failure_code for details
+  ThreeDSStatusFailed = 2,
+/// Unknown state - used for forward compatibility
+/// New server states won’t break the app
+  ThreeDSStatusUnknown = 99,
+};
+
 /// {
 /// “id” : “TKcHHcB9e1GrG3rifyfLEtoM”,
 /// “fingerprint” : “FPRrcobjtdU98gr4sjiqYR1Qg”,
@@ -1343,7 +2069,7 @@ typedef SWIFT_ENUM(NSInteger, PaymentInstrumentType, open) {
 /// “expires_at” : “2022-07-04T00:03:24.48Z”,
 /// “currency” : “USD”
 /// }
-SWIFT_CLASS("_TtC17FinixPaymentSheet13TokenResponse")
+SWIFT_CLASS_NAMED("TokenizedResponse")
 @interface TokenResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
 @property (nonatomic, readonly, copy) NSString * _Nonnull fingerprint;
