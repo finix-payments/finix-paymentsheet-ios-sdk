@@ -32,6 +32,12 @@ Or in Xcode:
 - iOS 15.0+
 - Xcode 26.6+
 
+## Datadog
+
+The package depends on Datadog's `dd-sdk-ios` (3.6.1 or later 3.x) for diagnostics. Swift Package
+Manager adds it for you. If your app also uses Datadog, both share one copy, and the SDK logs to its own
+Datadog instance without touching yours.
+
 ## Demo App
 
 This repository contains only the pre-built binary XCFramework. For a working integration, see the

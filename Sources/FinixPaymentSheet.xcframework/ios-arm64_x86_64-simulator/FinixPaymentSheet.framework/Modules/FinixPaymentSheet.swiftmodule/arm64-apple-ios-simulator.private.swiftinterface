@@ -2,9 +2,6 @@
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FinixPaymentSheet
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
-import DatadogCore
-import DatadogCrashReporting
-import DatadogLogs
 import DeveloperToolsSupport
 import Foundation
 import Swift
@@ -87,6 +84,29 @@ extension SwiftUICore.View {
 }
 extension Swift.RandomAccessCollection {
   public func bisectToFirstIndex(where predicate: (Self.Element) throws -> Swift.Bool) rethrows -> Self.Index?
+}
+@_spi(FinixDatadog) @frozen public enum DatadogLogLevel {
+  @_spi(FinixDatadog) case debug
+  @_spi(FinixDatadog) case info
+  @_spi(FinixDatadog) case warn
+  @_spi(FinixDatadog) case error
+  @_spi(FinixDatadog) public static func == (a: FinixPaymentSheet.DatadogLogLevel, b: FinixPaymentSheet.DatadogLogLevel) -> Swift.Bool
+  @_spi(FinixDatadog) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(FinixDatadog) public var hashValue: Swift.Int {
+    @_spi(FinixDatadog) get
+  }
+}
+@_spi(FinixDatadog) public protocol DatadogLogSinking {
+  @_spi(FinixDatadog) func log(level: FinixPaymentSheet.DatadogLogLevel, message: Swift.String, attributes: [Swift.String : any Swift.Encodable]?)
+}
+@_spi(FinixDatadog) public protocol DatadogBootstrapping {
+  @_spi(FinixDatadog) func isInitialized(instanceName: Swift.String) -> Swift.Bool
+  @_spi(FinixDatadog) func isDefaultInstanceInitialized() -> Swift.Bool
+  @_spi(FinixDatadog) func initialize(instanceName: Swift.String, clientToken: Swift.String, env: Swift.String, service: Swift.String)
+  @_spi(FinixDatadog) func setUserInfo(instanceName: Swift.String, id: Swift.String, extraInfo: [Swift.String : Swift.String])
+  @_spi(FinixDatadog) func enableLogs(instanceName: Swift.String)
+  @_spi(FinixDatadog) func enableCrashReporting(instanceName: Swift.String)
+  @_spi(FinixDatadog) func makeLogger(instanceName: Swift.String, service: Swift.String, name: Swift.String, remoteLogThreshold: FinixPaymentSheet.DatadogLogLevel, consoleLogPrefix: Swift.String?) -> any FinixPaymentSheet.DatadogLogSinking
 }
 @objc(TokenResponse) public class TokenizedResponse : ObjectiveC.NSObject, Swift.Decodable {
   @objc final public let id: Swift.String
@@ -709,6 +729,10 @@ extension FinixPaymentSheet.BankAccountType : Swift.RawRepresentable {}
 extension FinixPaymentSheet.PaymentSheetNavigationDestination : Swift.Sendable {}
 @available(iOS 16.0, *)
 extension FinixPaymentSheet.PaymentSheetWithCustomNavigationBar : Swift.Sendable {}
+@_spi(FinixDatadog) extension FinixPaymentSheet.DatadogLogLevel : Swift.Equatable {}
+@_spi(FinixDatadog) extension FinixPaymentSheet.DatadogLogLevel : Swift.Hashable {}
+@_spi(FinixDatadog) extension FinixPaymentSheet.DatadogLogLevel : Swift.Sendable {}
+@_spi(FinixDatadog) extension FinixPaymentSheet.DatadogLogLevel : Swift.BitwiseCopyable {}
 extension FinixPaymentSheet.FinixAPIEndpoint : Swift.Equatable {}
 extension FinixPaymentSheet.FinixAPIEndpoint : Swift.Hashable {}
 extension FinixPaymentSheet.FinixAPIEndpoint : Swift.RawRepresentable {}

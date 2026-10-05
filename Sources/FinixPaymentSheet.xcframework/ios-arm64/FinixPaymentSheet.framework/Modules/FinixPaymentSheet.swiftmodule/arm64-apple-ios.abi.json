@@ -2010,8 +2010,8 @@
       },
       {
         "kind": "Import",
-        "name": "DatadogCore",
-        "printedName": "DatadogCore",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "FinixPaymentSheet",
         "declAttributes": [
@@ -2019,25 +2019,761 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "DatadogCrashReporting",
-        "printedName": "DatadogCrashReporting",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
+        "kind": "TypeDecl",
+        "name": "DatadogLogLevel",
+        "printedName": "DatadogLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.DatadogLogLevel.Type) -> FinixPaymentSheet.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                    "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                        "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet15DatadogLogLevelO5debugyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO5debugyA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "fixedbinaryorder": 0,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.DatadogLogLevel.Type) -> FinixPaymentSheet.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                    "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                        "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet15DatadogLogLevelO4infoyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO4infoyA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "fixedbinaryorder": 1,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "warn",
+            "printedName": "warn",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.DatadogLogLevel.Type) -> FinixPaymentSheet.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                    "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                        "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet15DatadogLogLevelO4warnyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO4warnyA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "fixedbinaryorder": 2,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.DatadogLogLevel.Type) -> FinixPaymentSheet.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                    "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                        "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet15DatadogLogLevelO5erroryA2CmF",
+            "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO5erroryA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "fixedbinaryorder": 3,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet15DatadogLogLevelO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO2eeoiySbAC_ACtFZ",
+            "moduleName": "FinixPaymentSheet",
+            "static": true,
+            "implicit": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet15DatadogLogLevelO9hashValueSivp",
+            "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO9hashValueSivp",
+            "moduleName": "FinixPaymentSheet",
+            "implicit": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet15DatadogLogLevelO9hashValueSivg",
+                "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO9hashValueSivg",
+                "moduleName": "FinixPaymentSheet",
+                "implicit": true,
+                "spi_group_names": [
+                  "FinixDatadog"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet15DatadogLogLevelO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO4hash4intoys6HasherVz_tF",
+            "moduleName": "FinixPaymentSheet",
+            "implicit": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17FinixPaymentSheet15DatadogLogLevelO",
+        "mangledName": "$s17FinixPaymentSheet15DatadogLogLevelO",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "FinixDatadog"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
       },
       {
-        "kind": "Import",
-        "name": "DatadogLogs",
-        "printedName": "DatadogLogs",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
+        "kind": "TypeDecl",
+        "name": "DatadogLogSinking",
+        "printedName": "DatadogLogSinking",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(level:message:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : any Swift.Encodable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any Swift.Encodable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "any Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet17DatadogLogSinkingP3log5level7message10attributesyAA0dE5LevelO_SSSDySSSE_pGSgtF",
+            "mangledName": "$s17FinixPaymentSheet17DatadogLogSinkingP3log5level7message10attributesyAA0dE5LevelO_SSSDySSSE_pGSgtF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogLogSinking>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogLogSinking>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17FinixPaymentSheet17DatadogLogSinkingP",
+        "mangledName": "$s17FinixPaymentSheet17DatadogLogSinkingP",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "FinixDatadog"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FinixPaymentSheet"
+        "kind": "TypeDecl",
+        "name": "DatadogBootstrapping",
+        "printedName": "DatadogBootstrapping",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isInitialized",
+            "printedName": "isInitialized(instanceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP13isInitialized12instanceNameSbSS_tF",
+            "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP13isInitialized12instanceNameSbSS_tF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isDefaultInstanceInitialized",
+            "printedName": "isDefaultInstanceInitialized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP28isDefaultInstanceInitializedSbyF",
+            "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP28isDefaultInstanceInitializedSbyF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogBootstrapping>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(instanceName:clientToken:env:service:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP10initialize12instanceName11clientToken3env7serviceySS_S3StF",
+            "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP10initialize12instanceName11clientToken3env7serviceySS_S3StF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserInfo",
+            "printedName": "setUserInfo(instanceName:id:extraInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP11setUserInfo12instanceName2id05extraH0ySS_SSSDyS2SGtF",
+            "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP11setUserInfo12instanceName2id05extraH0ySS_SSSDyS2SGtF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableLogs",
+            "printedName": "enableLogs(instanceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP10enableLogs12instanceNameySS_tF",
+            "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP10enableLogs12instanceNameySS_tF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableCrashReporting",
+            "printedName": "enableCrashReporting(instanceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP20enableCrashReporting12instanceNameySS_tF",
+            "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP20enableCrashReporting12instanceNameySS_tF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeLogger",
+            "printedName": "makeLogger(instanceName:service:name:remoteLogThreshold:consoleLogPrefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogSinking",
+                "printedName": "any FinixPaymentSheet.DatadogLogSinking",
+                "usr": "s:17FinixPaymentSheet17DatadogLogSinkingP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "FinixPaymentSheet.DatadogLogLevel",
+                "usr": "s:17FinixPaymentSheet15DatadogLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP10makeLogger12instanceName7service4name18remoteLogThreshold07consoleM6PrefixAA0dM7Sinking_pSS_S2SAA0dM5LevelOSSSgtF",
+            "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP10makeLogger12instanceName7service4name18remoteLogThreshold07consoleM6PrefixAA0dM7Sinking_pSS_S2SAA0dM5LevelOSSSgtF",
+            "moduleName": "FinixPaymentSheet",
+            "genericSig": "<τ_0_0 where τ_0_0 : FinixPaymentSheet.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : FinixPaymentSheet.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17FinixPaymentSheet20DatadogBootstrappingP",
+        "mangledName": "$s17FinixPaymentSheet20DatadogBootstrappingP",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "FinixDatadog"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -28196,106 +28932,113 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1878,
+      "length": 33,
+      "value": "\"FinixPaymentSheetDatadogAdapter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 555,
+      "offset": 3585,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 560,
+      "offset": 3590,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 605,
+      "offset": 3635,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 610,
+      "offset": 3640,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 655,
+      "offset": 3685,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 660,
+      "offset": 3690,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 706,
+      "offset": 3736,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 711,
+      "offset": 3741,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "StringLiteral",
-      "offset": 982,
+      "offset": 4003,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7179,
+      "offset": 10208,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7184,
+      "offset": 10213,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7233,
+      "offset": 10262,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7238,
+      "offset": 10267,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7290,
+      "offset": 10319,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7295,
+      "offset": 10324,
       "length": 1,
       "value": "2"
     },
@@ -30381,7 +31124,14 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 405,
+      "offset": 410,
+      "length": 19,
+      "value": "\"FinixPaymentSheet\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 546,
       "length": 22,
       "value": "\"paymentsheet-ios-sdk\""
     },
