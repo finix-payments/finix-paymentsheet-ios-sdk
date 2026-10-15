@@ -215,7 +215,7 @@ public struct FinixError : Swift.Error {
     case InvalidCurrencyCode
     case NoCardData
     case ThreeDSSessionCreationFailed
-    case ThreeDSChallengeLoadFailed
+    case ThreeDSChallengeFailed
     case ThreeDSAuthenticationFailed
     case ThreeDSTimeout
     case ThreeDSCancelled
@@ -692,7 +692,7 @@ extension SwiftUICore.View {
 }
 @objc(ThreeDSErrorCode) public enum ThreeDSErrorCode : Swift.Int {
   case sessionCreationFailed = 0
-  case challengeLoadFailed = 1
+  case challengeFailed = 1
   case authenticationFailed = 2
   case timeout = 3
   case cancelled = 4

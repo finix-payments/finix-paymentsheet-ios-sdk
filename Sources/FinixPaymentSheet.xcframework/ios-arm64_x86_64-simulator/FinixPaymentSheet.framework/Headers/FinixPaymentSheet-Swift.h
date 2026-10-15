@@ -847,8 +847,8 @@ SWIFT_CLASS_NAMED("ThreeDSError")
 typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSErrorCode, "ThreeDSErrorCode", open) {
 /// Failed to create 3DS session
   ThreeDSErrorCodeSessionCreationFailed = 0,
-/// Failed to load challenge page
-  ThreeDSErrorCodeChallengeLoadFailed = 1,
+/// Challenge failed
+  ThreeDSErrorCodeChallengeFailed = 1,
 /// Authentication failed
   ThreeDSErrorCodeAuthenticationFailed = 2,
 /// Challenge timed out
@@ -1893,8 +1893,8 @@ SWIFT_CLASS_NAMED("ThreeDSError")
 typedef SWIFT_ENUM_NAMED(NSInteger, ThreeDSErrorCode, "ThreeDSErrorCode", open) {
 /// Failed to create 3DS session
   ThreeDSErrorCodeSessionCreationFailed = 0,
-/// Failed to load challenge page
-  ThreeDSErrorCodeChallengeLoadFailed = 1,
+/// Challenge failed
+  ThreeDSErrorCodeChallengeFailed = 1,
 /// Authentication failed
   ThreeDSErrorCodeAuthenticationFailed = 2,
 /// Challenge timed out
