@@ -411,7 +411,8 @@ SWIFT_CLASS("_TtC17FinixPaymentSheet13PaymentAction")
 @property (nonatomic, strong) Localization * _Nonnull localization;
 @property (nonatomic, weak) id <PaymentActionDelegate> _Nullable delegate;
 /// Handle a 3DS redirect URL from deep link
-/// Call this from your AppDelegate or SceneDelegate when receiving a URL with your custom scheme
+/// Call this from your AppDelegate or SceneDelegate when receiving a URL with your custom
+/// scheme
 /// Example usage in AppDelegate:
 /// \code
 /// func application(_ app: UIApplication, open url: URL, options: [...]) -> Bool {
@@ -543,7 +544,8 @@ SWIFT_CLASS("_TtC17FinixPaymentSheet22PaymentInputController")
 ///   </li>
 ///   <li>
 ///     error/validation messages
-///     When creating you may selectively declare or override messages as needed. The default English string is provided.
+///     When creating you may selectively declare or override messages as needed. The default
+///     English string is provided.
 ///     Note: Changed from struct to class for Objective-C compatibility
 ///   </li>
 /// </ul>

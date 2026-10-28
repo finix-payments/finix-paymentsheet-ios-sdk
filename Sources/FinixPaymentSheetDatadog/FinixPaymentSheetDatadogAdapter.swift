@@ -72,14 +72,14 @@ private struct LogSink: DatadogLogSinking {
 
     func log(level: DatadogLogLevel, message: String, attributes: [String: Encodable]?) {
         switch level {
-        case .debug:
-            logger.debug(message, attributes: attributes)
-        case .info:
-            logger.info(message, attributes: attributes)
-        case .warn:
-            logger.warn(message, attributes: attributes)
-        case .error:
-            logger.error(message, attributes: attributes)
+            case .debug:
+                logger.debug(message, attributes: attributes)
+            case .info:
+                logger.info(message, attributes: attributes)
+            case .warn:
+                logger.warn(message, attributes: attributes)
+            case .error:
+                logger.error(message, attributes: attributes)
         }
     }
 }
@@ -87,14 +87,14 @@ private struct LogSink: DatadogLogSinking {
 private extension DatadogLogLevel {
     var logLevel: DatadogLogs.LogLevel {
         switch self {
-        case .debug:
-            .debug
-        case .info:
-            .info
-        case .warn:
-            .warn
-        case .error:
-            .error
+            case .debug:
+                .debug
+            case .info:
+                .info
+            case .warn:
+                .warn
+            case .error:
+                .error
         }
     }
 }

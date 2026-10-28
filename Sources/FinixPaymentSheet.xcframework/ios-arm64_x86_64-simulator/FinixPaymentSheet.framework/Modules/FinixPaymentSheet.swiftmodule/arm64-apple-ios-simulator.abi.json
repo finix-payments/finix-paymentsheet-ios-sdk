@@ -28422,14 +28422,14 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Model\/Address.swift",
       "kind": "StringLiteral",
-      "offset": 1336,
+      "offset": 1390,
       "length": 13,
       "value": "\"postal_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Model\/Address.swift",
       "kind": "StringLiteral",
-      "offset": 2072,
+      "offset": 2126,
       "length": 13,
       "value": "\"postal_code\""
     },
@@ -28478,140 +28478,140 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "StringLiteral",
-      "offset": 2170,
+      "offset": 2179,
       "length": 35,
       "value": "\"^(6011|622[126 - 925]|64[4-9]|65)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2246,
+      "offset": 2271,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2261,
+      "offset": 2294,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "StringLiteral",
-      "offset": 2282,
+      "offset": 2320,
       "length": 17,
       "value": "\"^(35[2-8][0-9])\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2335,
+      "offset": 2373,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2350,
+      "offset": 2388,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "StringLiteral",
-      "offset": 2371,
+      "offset": 2409,
       "length": 11,
       "value": "\"^(5[1-5])\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2425,
+      "offset": 2463,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2440,
+      "offset": 2478,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "StringLiteral",
-      "offset": 2461,
+      "offset": 2499,
       "length": 11,
       "value": "\"^(2[2-7])\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2515,
+      "offset": 2553,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2530,
+      "offset": 2568,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "StringLiteral",
-      "offset": 2568,
+      "offset": 2619,
       "length": 36,
       "value": "\"^(4026|417500|4508|4844|4913|4917)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2641,
+      "offset": 2708,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2656,
+      "offset": 2731,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "StringLiteral",
-      "offset": 2694,
+      "offset": 2774,
       "length": 4,
       "value": "\"^4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2735,
+      "offset": 2815,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/BINCard.swift",
       "kind": "IntegerLiteral",
-      "offset": 2750,
+      "offset": 2830,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/BankAccountTypeTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1871,
+      "offset": 1905,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/BankAccountTypeTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2043,
+      "offset": 2077,
       "length": 7,
       "value": "\"Arrow\""
     },
@@ -28688,98 +28688,98 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2200,
+      "offset": 2263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 2332,
+      "offset": 2395,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2495,
+      "offset": 2558,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 2574,
+      "offset": 2637,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2635,
+      "offset": 2698,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2650,
+      "offset": 2713,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2820,
+      "offset": 2883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 2899,
+      "offset": 2962,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2960,
+      "offset": 3023,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2975,
+      "offset": 3038,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3035,
+      "offset": 3098,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3051,
+      "offset": 3114,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 4359,
+      "offset": 4422,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 4408,
+      "offset": 4471,
       "length": 4,
       "value": "30.0"
     },
@@ -28800,63 +28800,63 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 1184,
+      "offset": 1200,
       "length": 7,
       "value": "\"`~-. \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 1540,
+      "offset": 1556,
       "length": 6,
       "value": "\" #-.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 2003,
+      "offset": 2019,
       "length": 5,
       "value": "\" -.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 2413,
+      "offset": 2429,
       "length": 12,
       "value": "\"0123456789\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 2832,
+      "offset": 2848,
       "length": 4,
       "value": "\" -\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 8490,
+      "offset": 10151,
       "length": 19,
       "value": "\"PERSONAL_CHECKING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 8537,
+      "offset": 10198,
       "length": 18,
       "value": "\"PERSONAL_SAVINGS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 8584,
+      "offset": 10245,
       "length": 19,
       "value": "\"BUSINESS_CHECKING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/CardEntryField.swift",
       "kind": "StringLiteral",
-      "offset": 8631,
+      "offset": 10292,
       "length": 18,
       "value": "\"BUSINESS_SAVINGS\""
     },
@@ -28877,42 +28877,42 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
       "kind": "BooleanLiteral",
-      "offset": 2864,
+      "offset": 2888,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
       "kind": "BooleanLiteral",
-      "offset": 2899,
+      "offset": 2923,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
       "kind": "BooleanLiteral",
-      "offset": 4984,
+      "offset": 5066,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
       "kind": "BooleanLiteral",
-      "offset": 5019,
+      "offset": 5101,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
       "kind": "BooleanLiteral",
-      "offset": 8090,
+      "offset": 8192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetNavigationDestination.swift",
       "kind": "BooleanLiteral",
-      "offset": 8125,
+      "offset": 8227,
       "length": 5,
       "value": "false"
     },
@@ -28926,7 +28926,7 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/CountryController\/CountrySelectionController.swift",
       "kind": "Array",
-      "offset": 2434,
+      "offset": 2512,
       "length": 2,
       "value": "[]"
     },
@@ -28940,161 +28940,147 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3585,
+      "offset": 3623,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3590,
+      "offset": 3628,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3635,
+      "offset": 3673,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3640,
+      "offset": 3678,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3685,
+      "offset": 3723,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3690,
+      "offset": 3728,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3736,
+      "offset": 3774,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3741,
+      "offset": 3779,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4003,
+      "offset": 4041,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10208,
+      "offset": 10296,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10213,
+      "offset": 10301,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10262,
+      "offset": 10350,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10267,
+      "offset": 10355,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10319,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10324,
-      "length": 1,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1657,
+      "offset": 1703,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1850,
+      "offset": 1896,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2013,
+      "offset": 2059,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2156,
+      "offset": 2202,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2439,
+      "offset": 2485,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2660,
+      "offset": 2764,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2795,
+      "offset": 2899,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/DoubleTextInputTableViewCell.swift",
       "kind": "Array",
-      "offset": 3147,
+      "offset": 3251,
       "length": 2,
       "value": "[]"
     },
@@ -29108,98 +29094,98 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5963,
+      "offset": 6171,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6204,
+      "offset": 6412,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6377,
+      "offset": 6585,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "StringLiteral",
-      "offset": 6407,
+      "offset": 6615,
       "length": 6,
       "value": "\"Scan\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6483,
+      "offset": 6691,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6605,
+      "offset": 6813,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "StringLiteral",
-      "offset": 6676,
+      "offset": 6884,
       "length": 13,
       "value": "\"camera.fill\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6809,
+      "offset": 7017,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7123,
+      "offset": 7331,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7311,
+      "offset": 7519,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/FieldInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7436,
+      "offset": 7644,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+Bank.swift",
       "kind": "StringLiteral",
-      "offset": 1502,
+      "offset": 1582,
       "length": 16,
       "value": "\"account_number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+Bank.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1622,
       "length": 11,
       "value": "\"bank_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+Bank.swift",
       "kind": "StringLiteral",
-      "offset": 1581,
+      "offset": 1661,
       "length": 14,
       "value": "\"account_type\""
     },
@@ -29262,28 +29248,28 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 5013,
+      "offset": 5091,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 7410,
+      "offset": 7634,
       "length": 15,
       "value": "\"security_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 7457,
+      "offset": 7681,
       "length": 18,
       "value": "\"expiration_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 7506,
+      "offset": 7730,
       "length": 17,
       "value": "\"expiration_year\""
     },
@@ -29304,301 +29290,301 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1220,
+      "offset": 1229,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1227,
+      "offset": 1236,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1241,
+      "offset": 1258,
       "length": 4,
       "value": "0x0F"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1248,
+      "offset": 1265,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1261,
+      "offset": 1286,
       "length": 4,
       "value": "0x1C"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1268,
+      "offset": 1293,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1282,
+      "offset": 1315,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1410,
+      "offset": 1457,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1417,
+      "offset": 1464,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1431,
+      "offset": 1486,
       "length": 4,
       "value": "0x0F"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1438,
+      "offset": 1493,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1451,
+      "offset": 1514,
       "length": 4,
       "value": "0x1C"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1458,
+      "offset": 1521,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1472,
+      "offset": 1543,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1610,
+      "offset": 1686,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1622,
+      "offset": 1698,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1633,
+      "offset": 1709,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1645,
+      "offset": 1721,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1859,
+      "offset": 1944,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1866,
+      "offset": 1951,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1880,
+      "offset": 1973,
       "length": 4,
       "value": "0x0F"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1887,
+      "offset": 1980,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1900,
+      "offset": 2001,
       "length": 4,
       "value": "0x1C"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1907,
+      "offset": 2008,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 1921,
+      "offset": 2030,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2025,
+      "offset": 2139,
       "length": 4,
       "value": "0.78"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2038,
+      "offset": 2152,
       "length": 4,
       "value": "0.78"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2050,
+      "offset": 2164,
       "length": 4,
       "value": "0.80"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2063,
+      "offset": 2177,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 2312,
+      "offset": 2435,
       "length": 4,
       "value": "0x0B"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2319,
+      "offset": 2442,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 2333,
+      "offset": 2464,
       "length": 4,
       "value": "0x5D"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2340,
+      "offset": 2471,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 2353,
+      "offset": 2492,
       "length": 4,
       "value": "0xBC"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2360,
+      "offset": 2499,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2374,
+      "offset": 2521,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 2562,
+      "offset": 2723,
       "length": 4,
       "value": "0xFF"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2569,
+      "offset": 2730,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 2583,
+      "offset": 2752,
       "length": 4,
       "value": "0x2E"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2590,
+      "offset": 2759,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "IntegerLiteral",
-      "offset": 2603,
+      "offset": 2780,
       "length": 4,
       "value": "0x5E"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2610,
+      "offset": 2787,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/FinixCheckoutTheme1.swift",
       "kind": "FloatLiteral",
-      "offset": 2624,
+      "offset": 2809,
       "length": 3,
       "value": "1.0"
     },
@@ -29626,168 +29612,168 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 3059,
+      "offset": 3097,
       "length": 22,
       "value": "\"SDK not initialized!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 3092,
+      "offset": 3142,
       "length": 48,
       "value": "\"Error raised when SDK has not been initialized\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 3248,
+      "offset": 3342,
       "length": 26,
       "value": "\"No card reader connected\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 3285,
+      "offset": 3391,
       "length": 40,
       "value": "\"Error when no card reader is connected\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 3487,
+      "offset": 3607,
       "length": 30,
       "value": "\"Failed to create 3DS session\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 3719,
+      "offset": 3851,
       "length": 22,
       "value": "\"3DS challenge failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 3947,
+      "offset": 4079,
       "length": 27,
       "value": "\"3DS authentication failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 4158,
+      "offset": 4302,
       "length": 25,
       "value": "\"3DS challenge timed out\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 4358,
+      "offset": 4502,
       "length": 34,
       "value": "\"3DS authentication was cancelled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 4582,
+      "offset": 4738,
       "length": 26,
       "value": "\"Invalid 3DS redirect URL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 4817,
+      "offset": 4985,
       "length": 31,
       "value": "\"Failed to retrieve 3DS result\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 5060,
+      "offset": 5240,
       "length": 30,
       "value": "\"3DS configuration is missing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixError.swift",
       "kind": "StringLiteral",
-      "offset": 5301,
+      "offset": 5493,
       "length": 27,
       "value": "\"Invalid 3DS configuration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/PaddedTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1669,
+      "offset": 1715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/PaddedTextInputTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1799,
+      "offset": 1845,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/PaddedTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2070,
+      "offset": 2116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/PaddedTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2303,
+      "offset": 2407,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/PaddedTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2438,
+      "offset": 2542,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Cell\/PaddedTextInputTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2851,
+      "offset": 2955,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5189,
+      "offset": 5305,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5276,
+      "offset": 5392,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5415,
+      "offset": 5553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 6352,
+      "offset": 6490,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 6443,
+      "offset": 6581,
       "length": 4,
       "value": "true"
     },
@@ -29850,623 +29836,623 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6213,
+      "offset": 6506,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 12054,
+      "offset": 12899,
       "length": 10,
       "value": "\"Tokenize\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 12086,
+      "offset": 12943,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4139,
+      "offset": 4202,
       "length": 36,
       "value": "\"Card numbers can only contain 0-9.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4205,
+      "offset": 4280,
       "length": 33,
       "value": "\"Please enter valid card number.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4272,
+      "offset": 4359,
       "length": 29,
       "value": "\"Please select account type.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4330,
+      "offset": 4429,
       "length": 20,
       "value": "\"Invalid selection.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4386,
+      "offset": 4497,
       "length": 23,
       "value": "\"Enter month and year.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4445,
+      "offset": 4568,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4495,
+      "offset": 4630,
       "length": 21,
       "value": "\"Month must be 1-12.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4545,
+      "offset": 4692,
       "length": 18,
       "value": "\"Enter year (YY).\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4591,
+      "offset": 4750,
       "length": 21,
       "value": "\"Expiry in the past.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4641,
+      "offset": 4812,
       "length": 14,
       "value": "\"Enter state.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4680,
+      "offset": 4863,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4735,
+      "offset": 4930,
       "length": 25,
       "value": "\"Minimum of %@ required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4808,
+      "offset": 4989,
       "length": 6,
       "value": "\"Name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4839,
+      "offset": 5032,
       "length": 9,
       "value": "\"Address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4878,
+      "offset": 5083,
       "length": 8,
       "value": "\"Line 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4908,
+      "offset": 5125,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4938,
+      "offset": 5167,
       "length": 7,
       "value": "\"State\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 4973,
+      "offset": 5214,
       "length": 10,
       "value": "\"Zip Code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5011,
+      "offset": 5264,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5052,
+      "offset": 5317,
       "length": 8,
       "value": "\"Expiry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5111,
+      "offset": 5362,
       "length": 9,
       "value": "\"CVV\/CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5181,
+      "offset": 5418,
       "length": 16,
       "value": "\"Account Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5232,
+      "offset": 5481,
       "length": 16,
       "value": "\"Routing Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5281,
+      "offset": 5542,
       "length": 14,
       "value": "\"Account Type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5326,
+      "offset": 5599,
       "length": 19,
       "value": "\"Country or Region\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5373,
+      "offset": 5658,
       "length": 12,
       "value": "\"First Last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5416,
+      "offset": 5713,
       "length": 17,
       "value": "\"123 Main Street\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5469,
+      "offset": 5778,
       "length": 4,
       "value": "\"#1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5501,
+      "offset": 5822,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5537,
+      "offset": 5870,
       "length": 4,
       "value": "\"CA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5575,
+      "offset": 5920,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5616,
+      "offset": 5973,
       "length": 21,
       "value": "\"0000 0000 0000 0000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5671,
+      "offset": 6040,
       "length": 7,
       "value": "\"MM\/YY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5735,
+      "offset": 6090,
       "length": 5,
       "value": "\"111\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5807,
+      "offset": 6148,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5855,
+      "offset": 6208,
       "length": 11,
       "value": "\"000000000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5905,
+      "offset": 6270,
       "length": 18,
       "value": "\"Checking\/Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 5963,
+      "offset": 6340,
       "length": 19,
       "value": "\"Personal Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 6021,
+      "offset": 6410,
       "length": 18,
       "value": "\"Personal Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 6079,
+      "offset": 6480,
       "length": 19,
       "value": "\"Business Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 6137,
+      "offset": 6550,
       "length": 18,
       "value": "\"Business Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8701,
+      "offset": 9115,
       "length": 36,
       "value": "\"Card numbers can only contain 0-9.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8785,
+      "offset": 9199,
       "length": 33,
       "value": "\"Please enter valid card number.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8870,
+      "offset": 9284,
       "length": 29,
       "value": "\"Please select account type.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 8946,
+      "offset": 9360,
       "length": 20,
       "value": "\"Invalid selection.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9020,
+      "offset": 9434,
       "length": 23,
       "value": "\"Enter month and year.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9097,
+      "offset": 9511,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9165,
+      "offset": 9579,
       "length": 21,
       "value": "\"Month must be 1-12.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9233,
+      "offset": 9647,
       "length": 18,
       "value": "\"Enter year (YY).\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9297,
+      "offset": 9711,
       "length": 21,
       "value": "\"Expiry in the past.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9365,
+      "offset": 9779,
       "length": 14,
       "value": "\"Enter state.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9422,
+      "offset": 9836,
       "length": 21,
       "value": "\"Invalid characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9496,
+      "offset": 9910,
       "length": 25,
       "value": "\"Minimum of %@ required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9586,
+      "offset": 10000,
       "length": 6,
       "value": "\"Name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9635,
+      "offset": 10049,
       "length": 9,
       "value": "\"Address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9692,
+      "offset": 10106,
       "length": 8,
       "value": "\"Line 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9740,
+      "offset": 10154,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9788,
+      "offset": 10202,
       "length": 7,
       "value": "\"State\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 9841,
+      "offset": 10255,
       "length": 10,
       "value": "\"Zip Code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10041,
+      "offset": 10455,
       "length": 13,
       "value": "\"Postal Code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10119,
+      "offset": 10533,
       "length": 9,
       "value": "\"A1A 1A1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10176,
+      "offset": 10590,
       "length": 6,
       "value": "\"Next\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10230,
+      "offset": 10644,
       "length": 6,
       "value": "\"Done\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10283,
+      "offset": 10697,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10342,
+      "offset": 10756,
       "length": 8,
       "value": "\"Expiry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10393,
+      "offset": 10807,
       "length": 9,
       "value": "\"CVV\/CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10455,
+      "offset": 10869,
       "length": 16,
       "value": "\"Account Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10524,
+      "offset": 10938,
       "length": 16,
       "value": "\"Routing Number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10591,
+      "offset": 11005,
       "length": 14,
       "value": "\"Account Type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10654,
+      "offset": 11068,
       "length": 19,
       "value": "\"Country or Region\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10744,
+      "offset": 11158,
       "length": 12,
       "value": "\"First Last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10805,
+      "offset": 11219,
       "length": 17,
       "value": "\"123 Main Street\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10876,
+      "offset": 11290,
       "length": 4,
       "value": "\"#1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10926,
+      "offset": 11340,
       "length": 6,
       "value": "\"City\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 10980,
+      "offset": 11394,
       "length": 4,
       "value": "\"CA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11036,
+      "offset": 11450,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11095,
+      "offset": 11509,
       "length": 21,
       "value": "\"0000 0000 0000 0000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11168,
+      "offset": 11582,
       "length": 7,
       "value": "\"MM\/YY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11224,
+      "offset": 11638,
       "length": 5,
       "value": "\"111\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11288,
+      "offset": 11702,
       "length": 7,
       "value": "\"00000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11354,
+      "offset": 11768,
       "length": 11,
       "value": "\"000000000\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11422,
+      "offset": 11836,
       "length": 18,
       "value": "\"Checking\/Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11528,
+      "offset": 11942,
       "length": 19,
       "value": "\"Personal Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11604,
+      "offset": 12018,
       "length": 18,
       "value": "\"Personal Savings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11680,
+      "offset": 12094,
       "length": 19,
       "value": "\"Business Checking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Localization.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 12170,
       "length": 18,
       "value": "\"Business Savings\""
     },
@@ -30536,238 +30522,238 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "IntegerLiteral",
-      "offset": 1544,
+      "offset": 1553,
       "length": 4,
       "value": "0x7D"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1551,
+      "offset": 1560,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "IntegerLiteral",
-      "offset": 1565,
+      "offset": 1582,
       "length": 4,
       "value": "0x90"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1572,
+      "offset": 1589,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "IntegerLiteral",
-      "offset": 1585,
+      "offset": 1610,
       "length": 4,
       "value": "0xA5"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1592,
+      "offset": 1617,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1606,
+      "offset": 1639,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "IntegerLiteral",
-      "offset": 1687,
+      "offset": 1734,
       "length": 4,
       "value": "0x0B"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1694,
+      "offset": 1741,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "IntegerLiteral",
-      "offset": 1708,
+      "offset": 1763,
       "length": 4,
       "value": "0x5D"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1715,
+      "offset": 1770,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "IntegerLiteral",
-      "offset": 1728,
+      "offset": 1791,
       "length": 4,
       "value": "0xBC"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1735,
+      "offset": 1798,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1749,
+      "offset": 1820,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1810,
+      "offset": 1886,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 1924,
+      "offset": 2000,
       "length": 4,
       "value": "50.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 2009,
+      "offset": 2085,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 2097,
+      "offset": 2173,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "FloatLiteral",
-      "offset": 2188,
+      "offset": 2264,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "StringLiteral",
-      "offset": 7060,
+      "offset": 7381,
       "length": 11,
       "value": "\"#FFF6F8FA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "StringLiteral",
-      "offset": 7120,
+      "offset": 7441,
       "length": 11,
       "value": "\"#FF0052E5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "StringLiteral",
-      "offset": 7179,
+      "offset": 7500,
       "length": 11,
       "value": "\"#FFFF2E5E\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "StringLiteral",
-      "offset": 7301,
+      "offset": 7622,
       "length": 11,
       "value": "\"#FFFAF6F6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "StringLiteral",
-      "offset": 7362,
+      "offset": 7683,
       "length": 11,
       "value": "\"#FFEFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController+Styling.swift",
       "kind": "StringLiteral",
-      "offset": 7433,
+      "offset": 7754,
       "length": 11,
       "value": "\"#FFC1CACF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1904,
+      "offset": 1968,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1954,
+      "offset": 2018,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2649,
+      "offset": 2713,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7433,
+      "offset": 7530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7503,
+      "offset": 7600,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7518,
+      "offset": 7615,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8335,
+      "offset": 8432,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12789,
+      "offset": 13061,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12836,
+      "offset": 13108,
       "length": 5,
       "value": "false"
     },
@@ -30788,7 +30774,7 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Presentation\/PaymentSheetPresentationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4224,
+      "offset": 4490,
       "length": 5,
       "value": "false"
     },
@@ -30816,56 +30802,56 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3445,
+      "offset": 3453,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3483,
+      "offset": 3491,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3518,
+      "offset": 3526,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5382,
+      "offset": 5436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5420,
+      "offset": 5474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5455,
+      "offset": 5509,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9148,
+      "offset": 9224,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/SwiftUI\/PaymentSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9238,
+      "offset": 9314,
       "length": 5,
       "value": "false"
     },
@@ -31047,21 +31033,21 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Style.swift",
       "kind": "FloatLiteral",
-      "offset": 929,
+      "offset": 972,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Style.swift",
       "kind": "FloatLiteral",
-      "offset": 1044,
+      "offset": 1109,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/Style.swift",
       "kind": "FloatLiteral",
-      "offset": 1188,
+      "offset": 1279,
       "length": 4,
       "value": "12.0"
     },
@@ -31173,168 +31159,168 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 2946,
+      "offset": 2998,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 3051,
+      "offset": 3103,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 3159,
+      "offset": 3211,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 3250,
+      "offset": 3302,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 5171,
+      "offset": 5275,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 5420,
+      "offset": 5524,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 5599,
+      "offset": 5703,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 5866,
+      "offset": 5970,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 8308,
+      "offset": 8536,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 8484,
+      "offset": 8712,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 8595,
+      "offset": 8823,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 8693,
+      "offset": 8921,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 8809,
+      "offset": 9037,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 8910,
+      "offset": 9138,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 8990,
+      "offset": 9218,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9053,
+      "offset": 9281,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9137,
+      "offset": 9365,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9238,
+      "offset": 9466,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9336,
+      "offset": 9564,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9457,
+      "offset": 9685,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9556,
+      "offset": 9784,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9638,
+      "offset": 9866,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9750,
+      "offset": 9978,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 9802,
+      "offset": 10030,
       "length": 2,
       "value": "99"
     },
@@ -31439,154 +31425,154 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5059,
+      "offset": 5063,
       "length": 14,
       "value": "\"FRICTIONLESS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5106,
+      "offset": 5114,
       "length": 11,
       "value": "\"CHALLENGE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5148,
+      "offset": 5160,
       "length": 9,
       "value": "\"ATTEMPT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5188,
+      "offset": 5204,
       "length": 9,
       "value": "\"UNKNOWN\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5604,
+      "offset": 5620,
       "length": 23,
       "value": "\"Authentication failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 6345,
+      "offset": 6361,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 6893,
+      "offset": 6909,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 6971,
+      "offset": 6987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 6994,
+      "offset": 7010,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7094,
+      "offset": 7110,
       "length": 423,
       "value": "\"ThreeDSResponse(\n    sessionId: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7158,
+      "offset": 7174,
       "length": 1,
       "value": "\",\n    sourceId: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7193,
+      "offset": 7209,
       "length": 1,
       "value": "\",\n    state: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7222,
+      "offset": 7238,
       "length": 1,
       "value": "\",\n    authenticationType: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7286,
+      "offset": 7302,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7292,
+      "offset": 7308,
       "length": 1,
       "value": "\",\n    liabilityShift: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7339,
+      "offset": 7355,
       "length": 1,
       "value": "\",\n    eci: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7391,
+      "offset": 7407,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7397,
+      "offset": 7413,
       "length": 1,
       "value": "\",\n    version: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7433,
+      "offset": 7449,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7439,
+      "offset": 7455,
       "length": 1,
       "value": "\",\n    failureCode: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7489,
+      "offset": 7505,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7495,
+      "offset": 7511,
       "length": 1,
       "value": "\"\n)\""
     },
@@ -31670,140 +31656,140 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1331,
+      "offset": 1364,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1668,
+      "offset": 1706,
       "length": 89,
       "value": "\"ThreeDSError(\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1689,
+      "offset": 1727,
       "length": 1,
       "value": "\"): \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1702,
+      "offset": 1740,
       "length": 1,
       "value": "\" - Underlying: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1756,
+      "offset": 1794,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1783,
+      "offset": 1821,
       "length": 35,
       "value": "\"ThreeDSError(\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1804,
+      "offset": 1842,
       "length": 1,
       "value": "\"): \""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1817,
+      "offset": 1855,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 1975,
+      "offset": 2022,
       "length": 30,
       "value": "\"Failed to create 3DS session\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 2258,
+      "offset": 2373,
       "length": 22,
       "value": "\"3DS challenge failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 2538,
+      "offset": 2666,
       "length": 27,
       "value": "\"3DS authentication failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 2735,
+      "offset": 2875,
       "length": 25,
       "value": "\"3DS challenge timed out\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 2921,
+      "offset": 3061,
       "length": 34,
       "value": "\"3DS authentication was cancelled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 3132,
+      "offset": 3272,
       "length": 26,
       "value": "\"Invalid 3DS redirect URL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 3328,
+      "offset": 3477,
       "length": 26,
       "value": "\"Network error during 3DS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 3584,
+      "offset": 3746,
       "length": 25,
       "value": "\"Server error during 3DS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "IntegerLiteral",
-      "offset": 3629,
+      "offset": 3819,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 3845,
+      "offset": 4048,
       "length": 31,
       "value": "\"Failed to retrieve 3DS result\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 4139,
+      "offset": 4401,
       "length": 30,
       "value": "\"3DS configuration is missing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSError.swift",
       "kind": "StringLiteral",
-      "offset": 4367,
+      "offset": 4641,
       "length": 27,
       "value": "\"Invalid 3DS configuration\""
     },
@@ -31887,14 +31873,14 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8516,
+      "offset": 8672,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 8629,
+      "offset": 8785,
       "length": 3,
       "value": "1.0"
     },
@@ -31929,112 +31915,112 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 1822,
+      "offset": 1868,
       "length": 27,
       "value": "\"cardholder_authentication\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 1893,
+      "offset": 1939,
       "length": 31,
       "value": "\"electronic_commerce_indicator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 2000,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4215,
+      "offset": 4261,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4253,
+      "offset": 4299,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4353,
+      "offset": 4399,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4402,
+      "offset": 4448,
       "length": 23,
       "value": "\"payment_instrument_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4449,
+      "offset": 4495,
       "length": 10,
       "value": "\"token_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4487,
+      "offset": 4533,
       "length": 14,
       "value": "\"redirect_url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4535,
+      "offset": 4581,
       "length": 30,
       "value": "\"3d_secure_authentication_url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4605,
+      "offset": 4651,
       "length": 37,
       "value": "\"3d_secure_authentication_session_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4678,
+      "offset": 4724,
       "length": 19,
       "value": "\"3d_secure_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4732,
+      "offset": 4778,
       "length": 21,
       "value": "\"authentication_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4781,
+      "offset": 4827,
       "length": 14,
       "value": "\"failure_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4826,
+      "offset": 4872,
       "length": 17,
       "value": "\"failure_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+ThreeDS.swift",
       "kind": "StringLiteral",
-      "offset": 4874,
+      "offset": 4920,
       "length": 26,
       "value": "\"3d_secure_authentication\""
     },
