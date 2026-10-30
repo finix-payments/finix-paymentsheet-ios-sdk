@@ -30,7 +30,7 @@ Or in Xcode:
 ## Requirements
 
 - iOS 15.0+
-- Xcode 26.6+
+- Xcode 26.3+
 
 ## Datadog
 

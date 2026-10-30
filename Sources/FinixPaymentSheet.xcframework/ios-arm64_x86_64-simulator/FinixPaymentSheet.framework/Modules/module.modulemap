@@ -1,3 +1,4 @@
 framework module FinixPaymentSheet {
   header "FinixPaymentSheet-Swift.h"
+  requires objc
 }
