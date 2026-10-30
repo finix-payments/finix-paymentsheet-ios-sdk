@@ -10,7 +10,7 @@ Add the following to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/finix-payments/finix-paymentsheet-ios-sdk.git", from: "1.0.12")
+    .package(url: "https://github.com/finix-payments/finix-paymentsheet-ios-sdk.git", from: "1.0.13")
 ],
 targets: [
     .target(
@@ -25,7 +25,7 @@ targets: [
 Or in Xcode:
 1. File → Add Package Dependencies
 2. Enter: `https://github.com/finix-payments/finix-paymentsheet-ios-sdk`
-3. Select version `1.0.12` or later
+3. Select version `1.0.13` or later
 
 ## Requirements
 

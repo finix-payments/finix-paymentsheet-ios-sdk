@@ -31126,7 +31126,7 @@
       "kind": "StringLiteral",
       "offset": 313,
       "length": 8,
-      "value": "\"1.0.12\""
+      "value": "\"1.0.13\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",
