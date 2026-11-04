@@ -596,6 +596,9 @@ extension SwiftUICore.View {
   
   #endif
 }
+public enum PaymentSheetMetadata {
+  public static let version: Swift.String
+}
 @objc(ThreeDSStatus) public enum ThreeDSStatus : Swift.Int, Swift.Codable {
   case pending = 0
   case succeeded = 1

@@ -21655,6 +21655,85 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "PaymentSheetMetadata",
+        "printedName": "PaymentSheetMetadata",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC8MetadataO7versionSSvpZ",
+            "mangledName": "$s17FinixPaymentSheet0bC8MetadataO7versionSSvpZ",
+            "moduleName": "FinixPaymentSheet",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC8MetadataO7versionSSvgZ",
+                "mangledName": "$s17FinixPaymentSheet0bC8MetadataO7versionSSvgZ",
+                "moduleName": "FinixPaymentSheet",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17FinixPaymentSheet0bC8MetadataO",
+        "mangledName": "$s17FinixPaymentSheet0bC8MetadataO",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -31124,7 +31203,7 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/PaymentSheetMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 313,
+      "offset": 329,
       "length": 8,
       "value": "\"1.0.13\""
     },
