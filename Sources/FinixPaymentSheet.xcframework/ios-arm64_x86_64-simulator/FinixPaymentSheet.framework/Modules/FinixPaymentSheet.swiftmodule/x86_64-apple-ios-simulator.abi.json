@@ -29082,28 +29082,28 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10296,
+      "offset": 9252,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10301,
+      "offset": 9257,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10350,
+      "offset": 9306,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 10355,
+      "offset": 9311,
       "length": 1,
       "value": "1"
     },
@@ -29250,21 +29250,21 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+Bank.swift",
       "kind": "StringLiteral",
-      "offset": 1582,
+      "offset": 1597,
       "length": 16,
       "value": "\"account_number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+Bank.swift",
       "kind": "StringLiteral",
-      "offset": 1622,
+      "offset": 1637,
       "length": 11,
       "value": "\"bank_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI+Bank.swift",
       "kind": "StringLiteral",
-      "offset": 1661,
+      "offset": 1676,
       "length": 14,
       "value": "\"account_type\""
     },
@@ -29334,21 +29334,21 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 7634,
+      "offset": 7641,
       "length": 15,
       "value": "\"security_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 7681,
+      "offset": 7688,
       "length": 18,
       "value": "\"expiration_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 7730,
+      "offset": 7737,
       "length": 17,
       "value": "\"expiration_year\""
     },
@@ -29824,35 +29824,35 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5305,
+      "offset": 5334,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5392,
+      "offset": 5421,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5553,
+      "offset": 5582,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 6490,
+      "offset": 6519,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 6581,
+      "offset": 6610,
       "length": 4,
       "value": "true"
     },

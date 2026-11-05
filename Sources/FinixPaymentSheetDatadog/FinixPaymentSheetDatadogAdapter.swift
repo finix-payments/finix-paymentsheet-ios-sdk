@@ -53,13 +53,20 @@ final class FinixPaymentSheetDatadogAdapter: NSObject, DatadogBootstrapping {
         remoteLogThreshold: DatadogLogLevel,
         consoleLogPrefix: String?
     ) -> DatadogLogSinking {
+        // Console output exists for development only. A nil format writes nothing to the console.
+        #if DEBUG
+            let consoleLogFormat: Logger.Configuration.ConsoleLogFormat? =
+                consoleLogPrefix.map { .shortWith(prefix: $0) } ?? .short
+        #else
+            let consoleLogFormat: Logger.Configuration.ConsoleLogFormat? = nil
+        #endif
         let logger = Logger.create(
             with: Logger.Configuration(
                 service: service,
                 name: name,
                 networkInfoEnabled: true,
                 remoteLogThreshold: remoteLogThreshold.logLevel,
-                consoleLogFormat: consoleLogPrefix.map { .shortWith(prefix: $0) } ?? .short
+                consoleLogFormat: consoleLogFormat
             ),
             in: Datadog.sdkInstance(named: instanceName)
         )
