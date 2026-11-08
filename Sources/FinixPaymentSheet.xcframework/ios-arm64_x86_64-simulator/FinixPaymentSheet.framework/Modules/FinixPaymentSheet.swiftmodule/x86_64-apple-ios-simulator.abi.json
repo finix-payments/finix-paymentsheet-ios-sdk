@@ -21601,6 +21601,836 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "PaymentSheetAccessibilityIdentifier",
+        "printedName": "PaymentSheetAccessibilityIdentifier",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "nameField",
+            "printedName": "nameField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO9nameFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO9nameFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardNumberField",
+            "printedName": "cardNumberField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO15cardNumberFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO15cardNumberFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "expirationField",
+            "printedName": "expirationField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO15expirationFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO15expirationFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "cvvField",
+            "printedName": "cvvField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO8cvvFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO8cvvFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "postalCodeField",
+            "printedName": "postalCodeField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO15postalCodeFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO15postalCodeFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "addressLine1Field",
+            "printedName": "addressLine1Field",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO17addressLine1FieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO17addressLine1FieldyA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "addressLine2Field",
+            "printedName": "addressLine2Field",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO17addressLine2FieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO17addressLine2FieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "cityField",
+            "printedName": "cityField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO9cityFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO9cityFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "regionField",
+            "printedName": "regionField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO11regionFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO11regionFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "countryField",
+            "printedName": "countryField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO12countryFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO12countryFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "accountNumberField",
+            "printedName": "accountNumberField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO18accountNumberFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO18accountNumberFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "routingNumberField",
+            "printedName": "routingNumberField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO18routingNumberFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO18routingNumberFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "accountTypeField",
+            "printedName": "accountTypeField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO16accountTypeFieldyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO16accountTypeFieldyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "tokenizeButton",
+            "printedName": "tokenizeButton",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO14tokenizeButtonyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO14tokenizeButtonyA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancelButton",
+            "printedName": "cancelButton",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO12cancelButtonyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO12cancelButtonyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraButton",
+            "printedName": "cameraButton",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO12cameraButtonyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO12cameraButtonyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Var",
+            "name": "navigationBar",
+            "printedName": "navigationBar",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO13navigationBaryA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO13navigationBaryA2CmF",
+            "moduleName": "FinixPaymentSheet",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButton",
+            "printedName": "closeButton",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type) -> FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSheetAccessibilityIdentifier",
+                        "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO11closeButtonyA2CmF",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO11closeButtonyA2CmF",
+            "moduleName": "FinixPaymentSheet"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSheetAccessibilityIdentifier",
+                    "printedName": "FinixPaymentSheet.PaymentSheetAccessibilityIdentifier",
+                    "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO8rawValueACSgSS_tcfc",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO8rawValueACSgSS_tcfc",
+            "moduleName": "FinixPaymentSheet",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO8rawValueSSvp",
+            "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO8rawValueSSvp",
+            "moduleName": "FinixPaymentSheet",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO8rawValueSSvg",
+                "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO8rawValueSSvg",
+                "moduleName": "FinixPaymentSheet",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17FinixPaymentSheet0bC23AccessibilityIdentifierO",
+        "mangledName": "$s17FinixPaymentSheet0bC23AccessibilityIdentifierO",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FinixPaymentSheet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -28767,98 +29597,98 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2263,
+      "offset": 2482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 2395,
+      "offset": 2614,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2558,
+      "offset": 2777,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 2637,
+      "offset": 2856,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2698,
+      "offset": 2917,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2713,
+      "offset": 2932,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2883,
+      "offset": 3102,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 2962,
+      "offset": 3181,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3023,
+      "offset": 3242,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3038,
+      "offset": 3257,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3098,
+      "offset": 3317,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3114,
+      "offset": 3333,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 4422,
+      "offset": 4641,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 4471,
+      "offset": 4690,
       "length": 4,
       "value": "30.0"
     },
@@ -31157,6 +31987,132 @@
       "offset": 2487,
       "length": 4,
       "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 24,
+      "value": "\"paymentSheet_nameField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 30,
+      "value": "\"paymentSheet_cardNumberField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 30,
+      "value": "\"paymentSheet_expirationField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 23,
+      "value": "\"paymentSheet_cvvField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 30,
+      "value": "\"paymentSheet_postalCodeField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 525,
+      "length": 32,
+      "value": "\"paymentSheet_addressLine1Field\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 32,
+      "value": "\"paymentSheet_addressLine2Field\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 641,
+      "length": 24,
+      "value": "\"paymentSheet_cityField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 689,
+      "length": 26,
+      "value": "\"paymentSheet_regionField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 740,
+      "length": 27,
+      "value": "\"paymentSheet_countryField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 823,
+      "length": 33,
+      "value": "\"paymentSheet_accountNumberField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 887,
+      "length": 33,
+      "value": "\"paymentSheet_routingNumberField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 949,
+      "length": 31,
+      "value": "\"paymentSheet_accountTypeField\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 1023,
+      "length": 29,
+      "value": "\"paymentSheet_tokenizeButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 1077,
+      "length": 27,
+      "value": "\"paymentSheet_cancelButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 27,
+      "value": "\"paymentSheet_cameraButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 1201,
+      "length": 28,
+      "value": "\"paymentSheet_navigationBar\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Helper\/AccessibilityIdentifiers.swift",
+      "kind": "StringLiteral",
+      "offset": 1253,
+      "length": 26,
+      "value": "\"paymentSheet_closeButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/Validation\/ValidCountry.swift",

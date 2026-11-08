@@ -569,6 +569,33 @@ extension SwiftUICore.View {
   
   #endif
 }
+public enum PaymentSheetAccessibilityIdentifier : Swift.String {
+  case nameField
+  case cardNumberField
+  case expirationField
+  case cvvField
+  case postalCodeField
+  case addressLine1Field
+  case addressLine2Field
+  case cityField
+  case regionField
+  case countryField
+  case accountNumberField
+  case routingNumberField
+  case accountTypeField
+  case tokenizeButton
+  case cancelButton
+  case cameraButton
+  case navigationBar
+  case closeButton
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum PaymentSheetMetadata {
   public static let version: Swift.String
 }
@@ -802,6 +829,9 @@ extension FinixPaymentSheet.PaymentInputController.PostalCodeFormat : Swift.Hash
 extension FinixPaymentSheet.PaymentInputController.PostalCodeFormat : Swift.RawRepresentable {}
 @available(iOS 13.0, *)
 extension FinixPaymentSheet.PaymentSheetModifier : Swift.Sendable {}
+extension FinixPaymentSheet.PaymentSheetAccessibilityIdentifier : Swift.Equatable {}
+extension FinixPaymentSheet.PaymentSheetAccessibilityIdentifier : Swift.Hashable {}
+extension FinixPaymentSheet.PaymentSheetAccessibilityIdentifier : Swift.RawRepresentable {}
 extension FinixPaymentSheet.ThreeDSStatus : Swift.Equatable {}
 extension FinixPaymentSheet.ThreeDSStatus : Swift.Hashable {}
 extension FinixPaymentSheet.ThreeDSStatus : Swift.RawRepresentable {}
