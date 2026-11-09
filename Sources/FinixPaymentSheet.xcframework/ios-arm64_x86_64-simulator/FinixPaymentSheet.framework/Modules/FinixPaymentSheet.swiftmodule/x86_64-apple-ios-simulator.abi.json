@@ -29625,70 +29625,70 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2917,
+      "offset": 2940,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2932,
+      "offset": 3081,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3102,
+      "offset": 3251,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 3181,
+      "offset": 3330,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3242,
+      "offset": 3414,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3257,
+      "offset": 3555,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3317,
+      "offset": 3615,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3333,
+      "offset": 3631,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 4641,
+      "offset": 5097,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/View\/ButtonFooterView.swift",
       "kind": "FloatLiteral",
-      "offset": 4690,
+      "offset": 5146,
       "length": 4,
       "value": "30.0"
     },
@@ -32189,7 +32189,7 @@
       "kind": "StringLiteral",
       "offset": 329,
       "length": 8,
-      "value": "\"1.0.13\""
+      "value": "\"1.0.14\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/ThreeDS\/ThreeDSStatus.swift",

@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.14] - 2026-11-09
+
+### Changed
+
+- Debug logs now stay on-device (console only). Only info, warn, and error levels ship to DataDog.
+- Removed noisy debug print statements from console output.
+
+### Fixed
+
+- Fixed `UITableViewHeaderFooterView` background color deprecation warning by using `backgroundConfiguration`.
+- Fixed Auto Layout constraint conflicts in `ButtonFooterView` by lowering button height constraint priority.
+
 ## [1.0.13] - 2026-10-30
 
 ### Changed
