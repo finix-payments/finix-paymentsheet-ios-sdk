@@ -29841,99 +29841,127 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 466,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 471,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 571,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 576,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1878,
+      "offset": 2393,
       "length": 33,
       "value": "\"FinixPaymentSheetDatadogAdapter\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3623,
+      "offset": 4138,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3628,
+      "offset": 4143,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3673,
+      "offset": 4188,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3678,
+      "offset": 4193,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3723,
+      "offset": 4238,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3728,
+      "offset": 4243,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3774,
+      "offset": 4289,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3779,
+      "offset": 4294,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4041,
+      "offset": 4556,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 9252,
+      "offset": 11542,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 9257,
+      "offset": 11547,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 9306,
+      "offset": 11596,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 9311,
+      "offset": 11601,
       "length": 1,
       "value": "1"
     },
