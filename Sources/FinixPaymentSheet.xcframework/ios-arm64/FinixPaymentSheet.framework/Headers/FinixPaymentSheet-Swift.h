@@ -314,12 +314,16 @@ typedef SWIFT_ENUM(NSInteger, FinixAPIEndpoint, open) {
 };
 
 @class NSString;
-/// Client credentials. Currently only need ApplicationId
+/// Client credentials. Tokenization needs only the application ID.
 /// Note: Changed from struct to class for Objective-C compatibility
 SWIFT_CLASS("_TtC17FinixPaymentSheet16FinixCredentials")
 @interface FinixCredentials : NSObject
+/// The Finix application ID (for example, “APxxxxxxxx”). The SDK uses it for tokenization.
 @property (nonatomic, readonly, copy) NSString * _Nonnull applicationId;
 @property (nonatomic, readonly) enum FinixAPIEndpoint environment;
+/// The Finix merchant ID (for example, “MUxxxxxxxx”). It is optional. The SDK uses it only
+/// to tag SDK logs. Do not pass the application ID here. 3DS reads the merchant ID from
+/// <code>PaymentInputController.Configuration.merchantId</code>.
 @property (nonatomic, readonly, copy) NSString * _Nullable merchantId;
 - (nonnull instancetype)initWithApplicationId:(NSString * _Nonnull)applicationId environment:(enum FinixAPIEndpoint)environment merchantId:(NSString * _Nullable)merchantId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

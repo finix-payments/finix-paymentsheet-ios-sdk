@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- SDK logs no longer copy the application ID into `merchant_id`. Logs now carry `finix_application_id`, and carry `merchant_id` only when the app passes a real merchant ID (`MU…`). DataDog reserves the name `application_id`, so the SDK uses a different name.
+- The log `merchant_id` now also reads `Configuration.merchantId` when `FinixCredentials.merchantId` is not set.
+- Clarified the documentation of `FinixCredentials.applicationId` and `FinixCredentials.merchantId`.
+
 ## [1.0.14] - 2026-11-09
 
 ### Changed

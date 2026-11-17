@@ -5367,7 +5367,8 @@
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -5475,7 +5476,8 @@
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -29933,35 +29935,35 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4556,
+      "offset": 4559,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 11542,
+      "offset": 13355,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 11547,
+      "offset": 13360,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 11596,
+      "offset": 13409,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/API\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 11601,
+      "offset": 13414,
       "length": 1,
       "value": "1"
     },
@@ -30682,35 +30684,35 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5334,
+      "offset": 5622,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5421,
+      "offset": 5709,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 5582,
+      "offset": 5870,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 6519,
+      "offset": 6807,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentAction\/PaymentAction.swift",
       "kind": "BooleanLiteral",
-      "offset": 6610,
+      "offset": 6898,
       "length": 4,
       "value": "true"
     },
@@ -31683,14 +31685,14 @@
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13061,
+      "offset": 13145,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/PaymentSheet\/PaymentSheet\/PaymentSheet\/Sources\/PaymentInputController\/PaymentInputController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13108,
+      "offset": 13192,
       "length": 5,
       "value": "false"
     },

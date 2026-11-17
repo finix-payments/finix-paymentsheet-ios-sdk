@@ -257,7 +257,10 @@ public struct FinixError : Swift.Error {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(credentials: FinixPaymentSheet.FinixCredentials, delegate: (any FinixPaymentSheet.PaymentActionDelegate)? = nil, configuration: FinixPaymentSheet.PaymentInputController.Configuration? = nil)
   #endif
-  @objc public var configuration: FinixPaymentSheet.PaymentInputController.Configuration
+  @objc public var configuration: FinixPaymentSheet.PaymentInputController.Configuration {
+    @objc get
+    @objc set
+  }
   @objc public var localization: FinixPaymentSheet.PaymentInputController.Localization
   @objc weak public var delegate: (any FinixPaymentSheet.PaymentActionDelegate)?
   @objc public static func handleThreeDSRedirect(url: Foundation.URL) -> Swift.Bool
